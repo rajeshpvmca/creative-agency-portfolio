@@ -1,0 +1,165 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+    <style>
+        body { font-family: 'Inter', sans-serif; background-color: transparent; color: #334155; padding: 15px 25px; }
+        .card { border: none; border-radius: 16px; box-shadow: 0 4px 15px rgba(0, 0, 0, 0.03); transition: transform 0.3s ease; }
+        .card:hover { transform: translateY(-3px); box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08); }
+        .text-theme { color: #ff4a57 !important; }
+        .bg-theme { background-color: #ff4a57 !important; color: #fff;}
+        .bg-theme-light { background-color: rgba(255, 74, 87, 0.1) !important; color: #ff4a57; }
+        .btn-theme { background-color: #ff4a57; color: white; border: none; padding: 10px 24px; border-radius: 12px; font-weight: 600; transition: all 0.3s ease;}
+        .btn-theme:hover { background-color: #e03e49; color: white; transform: translateY(-2px); box-shadow: 0 5px 15px rgba(255, 74, 87, 0.3);}
+        .btn-outline-theme { border: 2px solid #ff4a57; color: #ff4a57; padding: 8px 20px; border-radius: 10px; font-weight: 600; background: transparent;}
+        .btn-outline-theme:hover { background-color: #ff4a57; color: white; }
+        .badge-soft-success { background-color: rgba(40, 167, 69, 0.1); color: #28a745; border-radius: 6px; padding: 6px 12px; font-weight: 700; }
+        .badge-soft-warning { background-color: rgba(255, 193, 7, 0.1); color: #e0a800; border-radius: 6px; padding: 6px 12px; font-weight: 700; }
+        .badge-soft-danger { background-color: rgba(255, 74, 87, 0.1); color: #ff4a57; border-radius: 6px; padding: 6px 12px; font-weight: 700; }
+        .badge-soft-info { background-color: rgba(23, 162, 184, 0.1); color: #17a2b8; border-radius: 6px; padding: 6px 12px; font-weight: 700; }
+        
+        .icon-box { width: 50px; height: 50px; display: flex; align-items: center; justify-content: center; border-radius: 14px; background: rgba(255, 74, 87, 0.1); color: #ff4a57; }
+        .icon-box-success { background: rgba(40, 167, 69, 0.1); color: #28a745; }
+        .icon-box-info { background: rgba(23, 162, 184, 0.1); color: #17a2b8; }
+        .icon-box-warning { background: rgba(255, 193, 7, 0.1); color: #ffc107; }
+        
+        .avatar-circle { width: 40px; height: 40px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: bold; color: white; }
+        
+        /* Table */
+        .table-custom th { border-bottom: 2px solid #f1f5f9; color: #64748b; font-weight: 700; text-transform: uppercase; font-size: 0.75rem; letter-spacing: 1px; padding: 1.2rem 1rem; }
+        .table-custom td { vertical-align: middle; padding: 1rem; color: #475569; border-bottom: 1px solid #f8fafc;}
+        .table-custom tr:last-child td { border-bottom: none; }
+        
+        /* Form controls */
+        .form-control, .form-select { border-radius: 10px; padding: 0.75rem 1rem; border: 1px solid #e2e8f0; color: #334155; }
+        .form-control:focus, .form-select:focus { border-color: #ff4a57; box-shadow: 0 0 0 4px rgba(255, 74, 87, 0.1); }
+    </style>
+</head>
+<body>
+
+        <div class="row mb-4 align-items-end">
+            <div class="col-md-8">
+                <h2 class="fw-bolder mb-1">Financial Overview</h2>
+                <p class="text-muted mb-0">Monitor income, expenses, and profit margins.</p>
+            </div>
+            <div class="col-md-4 text-md-end mt-3 mt-md-0">
+                <button class="btn btn-outline-theme"><span class="material-symbols-outlined align-middle me-2">receipt</span>Generate Invoice</button>
+            </div>
+        </div>
+
+        <div class="row g-4 mb-4">
+            <div class="col-md-4">
+                <div class="card p-4">
+                    <h6 class="text-muted fw-bold mb-2">Monthly Income</h6>
+                    <h2 class="fw-bolder mb-0 text-success">$42,500</h2>
+                    <p class="text-success small fw-bold mt-2 mb-0"><span class="material-symbols-outlined fs-6 align-middle">trending_up</span> +8.2% vs last month</p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card p-4">
+                    <h6 class="text-muted fw-bold mb-2">Monthly Expenses</h6>
+                    <h2 class="fw-bolder mb-0 text-danger">$12,300</h2>
+                    <p class="text-danger small fw-bold mt-2 mb-0"><span class="material-symbols-outlined fs-6 align-middle">trending_down</span> -2.1% vs last month</p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card p-4 bg-theme text-white">
+                    <h6 class="mb-2 opacity-75">Net Profit Margin</h6>
+                    <h2 class="fw-bolder mb-0">71.05%</h2>
+                    <p class="small fw-bold mt-2 mb-0"><span class="material-symbols-outlined fs-6 align-middle">analytics</span> Extremely Healthy</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="card p-4 mb-4">
+            <h5 class="fw-bold mb-4">Income vs Expenses</h5>
+            <div id="financeChart"></div>
+        </div>
+
+        <div class="card p-0 overflow-hidden">
+            <div class="p-4 border-bottom d-flex justify-content-between align-items-center">
+                <h5 class="fw-bold mb-0">Recent Transactions</h5>
+                <a href="#" class="text-theme fw-bold text-decoration-none small">View All</a>
+            </div>
+            <div class="table-responsive">
+                <table class="table table-custom mb-0">
+                    <thead class="bg-light">
+                        <tr>
+                            <th>Transaction ID</th>
+                            <th>Date</th>
+                            <th>Description</th>
+                            <th>Type</th>
+                            <th class="text-end">Amount</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="fw-bold">#TRX-8923</td>
+                            <td>Oct 15, 2026</td>
+                            <td>E-Commerce Milestone 1</td>
+                            <td><span class="badge-soft-success">Income</span></td>
+                            <td class="text-end fw-bold text-success">+$4,500.00</td>
+                        </tr>
+                        <tr>
+                            <td class="fw-bold">#TRX-8922</td>
+                            <td>Oct 14, 2026</td>
+                            <td>AWS Server Hosting</td>
+                            <td><span class="badge-soft-danger">Expense</span></td>
+                            <td class="text-end fw-bold text-danger">-$350.00</td>
+                        </tr>
+                        <tr>
+                            <td class="fw-bold">#TRX-8921</td>
+                            <td>Oct 12, 2026</td>
+                            <td>SEO Retainer - TechCorp</td>
+                            <td><span class="badge-soft-success">Income</span></td>
+                            <td class="text-end fw-bold text-success">+$1,200.00</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
+
+        <script>
+            document.addEventListener('DOMContentLoaded', function() {
+                var options = {
+                    series: [{ name: 'Income', data: [44, 55, 57, 56, 61, 58, 63] }, { name: 'Expenses', data: [13, 23, 20, 18, 13, 27, 21] }],
+                    chart: { type: 'bar', height: 350, toolbar: { show: false }, fontFamily: 'Inter' },
+                    colors: ['#28a745', '#ff4a57'],
+                    plotOptions: { bar: { horizontal: false, columnWidth: '55%', endingShape: 'rounded', borderRadius: 4 } },
+                    dataLabels: { enabled: false },
+                    stroke: { show: true, width: 2, colors: ['transparent'] },
+                    xaxis: { categories: ['Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct'] },
+                    yaxis: { title: { text: '$ (thousands)' } },
+                    fill: { opacity: 1 }
+                };
+                new ApexCharts(document.querySelector("#financeChart"), options).render();
+            });
+        </script>
+         <!-- Redirect Script for Buttons and Dummy Links -->
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            document.querySelectorAll('button').forEach(btn => {
+                btn.addEventListener('click', (e) => {
+                    e.preventDefault();
+                    window.top.location.href = '../404.html';
+                });
+            });
+            
+            document.querySelectorAll('a[href="#"], a[href=""]').forEach(a => {
+                a.addEventListener('click', (e) => {
+                    e.preventDefault();
+                    window.top.location.href = '../404.html';
+                });
+            });
+        });
+    </script>
+    </body></html>

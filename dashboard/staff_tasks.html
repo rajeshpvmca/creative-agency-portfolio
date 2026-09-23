@@ -1,0 +1,134 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Staff Dashboard</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+    <style>
+        body { font-family: 'Inter', sans-serif; background-color: transparent; color: #334155; padding: 15px 25px; }
+        .card { border: none; border-radius: 16px; box-shadow: 0 4px 15px rgba(0, 0, 0, 0.03); transition: transform 0.3s ease; }
+        .card:hover { transform: translateY(-3px); box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08); }
+        .text-theme { color: #ff4a57 !important; }
+        .bg-theme { background-color: #ff4a57 !important; color: #fff;}
+        .bg-theme-light { background-color: rgba(255, 74, 87, 0.1) !important; color: #ff4a57; }
+        .btn-theme { background-color: #ff4a57; color: white; border: none; padding: 10px 24px; border-radius: 12px; font-weight: 600; transition: all 0.3s ease;}
+        .btn-theme:hover { background-color: #e03e49; color: white; transform: translateY(-2px); box-shadow: 0 5px 15px rgba(255, 74, 87, 0.3);}
+        .btn-outline-theme { border: 2px solid #ff4a57; color: #ff4a57; padding: 8px 20px; border-radius: 10px; font-weight: 600; background: transparent;}
+        .btn-outline-theme:hover { background-color: #ff4a57; color: white; }
+        .badge-soft-success { background-color: rgba(40, 167, 69, 0.1); color: #28a745; border-radius: 6px; padding: 6px 12px; font-weight: 700; }
+        .badge-soft-warning { background-color: rgba(255, 193, 7, 0.1); color: #e0a800; border-radius: 6px; padding: 6px 12px; font-weight: 700; }
+        .badge-soft-danger { background-color: rgba(255, 74, 87, 0.1); color: #ff4a57; border-radius: 6px; padding: 6px 12px; font-weight: 700; }
+        .badge-soft-info { background-color: rgba(23, 162, 184, 0.1); color: #17a2b8; border-radius: 6px; padding: 6px 12px; font-weight: 700; }
+        
+        .icon-box { width: 50px; height: 50px; display: flex; align-items: center; justify-content: center; border-radius: 14px; background: rgba(255, 74, 87, 0.1); color: #ff4a57; }
+        .icon-box-success { background: rgba(40, 167, 69, 0.1); color: #28a745; }
+        .icon-box-info { background: rgba(23, 162, 184, 0.1); color: #17a2b8; }
+        
+        .avatar-circle { width: 40px; height: 40px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: bold; color: white; }
+        
+        /* Table */
+        .table-custom th { border-bottom: 2px solid #f1f5f9; color: #64748b; font-weight: 700; text-transform: uppercase; font-size: 0.75rem; letter-spacing: 1px; padding: 1.2rem 1rem; }
+        .table-custom td { vertical-align: middle; padding: 1rem; color: #475569; border-bottom: 1px solid #f8fafc;}
+        .table-custom tr:last-child td { border-bottom: none; }
+        
+        .progress-theme { height: 8px; border-radius: 4px; background-color: #f1f5f9; }
+        .progress-theme .progress-bar { background-color: #ff4a57; border-radius: 4px; }
+    </style>
+</head>
+<body>
+
+        <div class="row mb-4 align-items-end">
+            <div class="col-md-8">
+                <h2 class="fw-bolder mb-1">My Task Board</h2>
+                <p class="text-muted mb-0">Manage your assigned tasks and update statuses.</p>
+            </div>
+        </div>
+
+        <div class="row g-4">
+            <!-- To Do -->
+            <div class="col-md-4">
+                <div class="card bg-light p-3 h-100 border-0" style="box-shadow: inset 0 2px 4px rgba(0,0,0,0.02);">
+                    <h6 class="fw-bold text-muted text-uppercase letter-spacing-1 mb-3">To Do (2)</h6>
+                    
+                    <div class="card p-3 mb-3 shadow-sm border-0 cursor-pointer">
+                        <span class="badge-soft-danger w-auto d-inline-block mb-2" style="width: fit-content;">Bug</span>
+                        <h6 class="fw-bold">Fix Checkout Padding</h6>
+                        <p class="text-muted small mb-3">E-Commerce Platform</p>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div class="avatar-circle small" style="background:#ff4a57; width:28px; height:28px; font-size:10px;">ME</div>
+                            <span class="text-danger small fw-bold"><i class="material-symbols-outlined align-middle fs-6">calendar_month</i> Today</span>
+                        </div>
+                    </div>
+                    
+                    <div class="card p-3 mb-3 shadow-sm border-0">
+                        <span class="badge-soft-info w-auto d-inline-block mb-2" style="width: fit-content;">Feature</span>
+                        <h6 class="fw-bold">Implement Dark Mode</h6>
+                        <p class="text-muted small mb-3">Brand Identity System</p>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div class="avatar-circle small" style="background:#ff4a57; width:28px; height:28px; font-size:10px;">ME</div>
+                            <span class="text-muted small fw-bold">Oct 28</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- In Progress -->
+            <div class="col-md-4">
+                <div class="card bg-light p-3 h-100 border-0" style="box-shadow: inset 0 2px 4px rgba(0,0,0,0.02);">
+                    <h6 class="fw-bold text-muted text-uppercase letter-spacing-1 mb-3">In Progress (1)</h6>
+                    
+                    <div class="card p-3 mb-3 shadow-sm border-0 border-start border-warning border-4">
+                        <span class="badge-soft-warning w-auto d-inline-block mb-2" style="width: fit-content;">Update</span>
+                        <h6 class="fw-bold">Update API Documentation</h6>
+                        <p class="text-muted small mb-3">Internal Tools</p>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div class="avatar-circle small" style="background:#ff4a57; width:28px; height:28px; font-size:10px;">ME</div>
+                            <span class="text-muted small fw-bold">Tomorrow</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Completed -->
+            <div class="col-md-4">
+                <div class="card bg-light p-3 h-100 border-0" style="box-shadow: inset 0 2px 4px rgba(0,0,0,0.02);">
+                    <h6 class="fw-bold text-muted text-uppercase letter-spacing-1 mb-3">Completed (1)</h6>
+                    
+                    <div class="card p-3 mb-3 shadow-sm border-0 opacity-75">
+                        <span class="badge-soft-success w-auto d-inline-block mb-2" style="width: fit-content;">Design</span>
+                        <h6 class="fw-bold text-decoration-line-through">Mobile App Login Screen</h6>
+                        <p class="text-muted small mb-3">App UI/UX</p>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <span class="text-success small fw-bold"><i class="material-symbols-outlined align-middle fs-6">check_circle</i> Done</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
+     <!-- Redirect Script for Buttons and Dummy Links -->
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            document.querySelectorAll('button').forEach(btn => {
+                btn.addEventListener('click', (e) => {
+                    e.preventDefault();
+                    window.top.location.href = '../404.html';
+                });
+            });
+            
+            document.querySelectorAll('a[href="#"], a[href=""]').forEach(a => {
+                a.addEventListener('click', (e) => {
+                    e.preventDefault();
+                    window.top.location.href = '../404.html';
+                });
+            });
+        });
+    </script>
+
+    </body></html>

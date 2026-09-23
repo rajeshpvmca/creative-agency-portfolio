@@ -1,4 +1,4 @@
-:root {
+﻿:root {
     --primary-color: #ff4a57;
     --secondary-color: #1f1f25;
     --text-color: #6c757d;
@@ -1485,3 +1485,6 @@ h1, h2, h3, h4, h5, h6 {
     }
 }
 
+
+/* Global Overflow Fix */
+html, body { overflow-x: hidden !important; width: 100%; max-width: 100vw; }

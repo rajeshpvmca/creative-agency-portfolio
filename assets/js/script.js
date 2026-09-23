@@ -167,3 +167,18 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
+
+
+// Global Handler for Empty Links (404 Redirection)
+document.addEventListener("click", function(e) {
+    const target = e.target.closest("a");
+    if (target) {
+        const href = target.getAttribute("href");
+        if (!href || href === "#" || href === "" || href.startsWith("#!")) {
+            e.preventDefault();
+            const currentPath = window.location.pathname;
+            const inSubfolder = currentPath.includes('/dashboard/');
+            window.location.href = inSubfolder ? '../404.html' : '404.html';
+        }
+    }
+});

@@ -22,11 +22,11 @@ document.addEventListener('DOMContentLoaded', () => {
 
     const navCustomer = document.getElementById('navCustomer');
     const navAdmin = document.getElementById('navAdmin');
-    const navDelivery = document.getElementById('navDelivery');
+    const navStaff = document.getElementById('navStaff');
 
     if (navCustomer) navCustomer.style.display = role === 'Customer' ? 'block' : 'none';
     if (navAdmin) navAdmin.style.display = role === 'Admin' ? 'block' : 'none';
-    if (navDelivery) navDelivery.style.display = role === 'Delivery' ? 'block' : 'none';
+    if (navStaff) navStaff.style.display = role === 'Staff' ? 'block' : 'none';
 
     // Signout Logic
     const signoutBtn = document.getElementById('signoutBtn');
@@ -47,7 +47,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const roleDefaults = {
         'Customer': 'customer_overview',
         'Admin': 'admin_overview',
-        'Delivery': 'delivery_overview'
+        'Staff': 'staff_overview'
     };
 
     // Restore last page
@@ -108,5 +108,19 @@ document.addEventListener('DOMContentLoaded', () => {
                 frame.contentWindow.postMessage({ type: 'DASH_USER', user }, '*');
             } catch(e) {}
         });
+    }
+});
+
+// Global Handler for Empty Links (404 Redirection)
+document.addEventListener("click", function(e) {
+    const target = e.target.closest("a");
+    if (target) {
+        const href = target.getAttribute("href");
+        if (!href || href === "#" || href === "" || href.startsWith("#!")) {
+            e.preventDefault();
+            const currentPath = window.location.pathname;
+            const inSubfolder = currentPath.includes('/dashboard/');
+            window.location.href = inSubfolder ? '../404.html' : '404.html';
+        }
     }
 });
