@@ -1488,3 +1488,85 @@ h1, h2, h3, h4, h5, h6 {
 
 /* Global Overflow Fix */
 html, body { overflow-x: hidden !important; width: 100%; max-width: 100vw; }
+
+
+/* --- GLOBAL THEME BUTTONS --- */
+.btn-theme-primary, .btn-theme-secondary, .btn-theme-outline {
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 12px 28px;
+    font-weight: 700;
+    border-radius: 8px;
+    text-decoration: none;
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    cursor: pointer;
+    border: none;
+    outline: none;
+}
+
+@media (max-width: 576px) {
+    .btn-theme-primary, .btn-theme-secondary, .btn-theme-outline {
+        padding: 10px 20px;
+        font-size: 0.9rem;
+    }
+}
+
+.btn-theme-primary { background-color: var(--primary-color, #ff4a57) !important; color: #fff !important; }
+.btn-theme-primary::before {
+    content: ''; position: absolute; top: 0; left: -100%; width: 100%; height: 100%;
+    background-color: var(--secondary-color, #1f1f25);
+    z-index: -1; transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+.btn-theme-primary:hover::before { left: 0; }
+.btn-theme-primary:hover { color: #fff !important; box-shadow: 0 8px 20px rgba(255, 74, 87, 0.3); }
+
+.btn-theme-secondary { background-color: var(--secondary-color, #1f1f25) !important; color: #fff !important; }
+.btn-theme-secondary::before {
+    content: ''; position: absolute; bottom: -100%; left: 0; width: 100%; height: 100%;
+    background-color: var(--primary-color, #ff4a57);
+    z-index: -1; transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+.btn-theme-secondary:hover::before { bottom: 0; }
+.btn-theme-secondary:hover { color: #fff !important; box-shadow: 0 8px 20px rgba(31, 31, 37, 0.3); }
+
+.btn-theme-outline { background-color: transparent !important; border: 2px solid var(--primary-color, #ff4a57) !important; color: var(--primary-color, #ff4a57) !important; padding: 10px 26px; }
+.btn-theme-outline::before {
+    content: ''; position: absolute; top: 0; right: -100%; width: 100%; height: 100%;
+    background-color: var(--primary-color, #ff4a57);
+    z-index: -1; transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+.btn-theme-outline:hover::before { right: 0; }
+.btn-theme-outline:hover { color: #fff !important; box-shadow: 0 8px 20px rgba(255, 74, 87, 0.2); }
+
+
+/* Login Button Special (White default, Dark Slate hover from Top to Bottom) */
+.btn-theme-login {
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 26px;
+    font-weight: 700;
+    border-radius: 50px;
+    text-decoration: none;
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    cursor: pointer;
+    border: none;
+    outline: none;
+    background-color: #ffffff !important;
+    color: var(--primary-color, #ff4a57) !important;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+.btn-theme-login::before {
+    content: ''; position: absolute; top: -100%; left: 0; width: 100%; height: 100%;
+    background-color: var(--secondary-color, #1f1f25);
+    z-index: -1; transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+.btn-theme-login:hover::before { top: 0; }
+.btn-theme-login:hover { color: #fff !important; box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2); }
