@@ -1,0 +1,55 @@
+/* Custom styles for About page */
+.page-banner {
+    background: linear-gradient(rgba(31, 31, 37, 0.8), rgba(31, 31, 37, 0.8)), url('../images/img_01.webp') center/cover;
+}
+
+
+/* Premium About Page Styles */
+.transition-hover {
+    transition: all 0.3s ease;
+}
+.transition-hover:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 30px rgba(0,0,0,0.1) !important;
+}
+.transform-up-lg {
+    transform: translateY(-15px);
+}
+.letter-spacing-1 {
+    letter-spacing: 1px;
+}
+.page-banner {
+    padding-top: 150px !important;
+    padding-bottom: 80px !important;
+}
+.timeline-dot {
+    transition: all 0.3s ease;
+}
+.timeline-item:hover .timeline-dot {
+    box-shadow: 0 0 0 8px rgba(255,74,87,0.3) !important;
+    transform: scale(1.2);
+}
+.join-btn {
+    width: auto;
+}
+
+/* 320px Responsive specific */
+@media (max-width: 991px) {
+    .transform-up-lg {
+        transform: translateY(0);
+    }
+}
+@media (max-width: 576px) {
+    .display-3 { font-size: 2.2rem; }
+    .display-5 { font-size: 1.8rem; }
+    .display-6 { font-size: 1.5rem; }
+    .page-banner { padding-top: 110px !important; padding-bottom: 60px !important; }
+    .timeline { border-left: 2px dashed var(--primary-color) !important; }
+    .timeline-item { padding-left: 2rem !important; }
+    .timeline-dot { left: -10px !important; width: 18px !important; height: 18px !important; }
+    .join-btn {
+        width: 100%;
+        padding: 12px !important;
+    }
+}
+

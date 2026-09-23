@@ -1,0 +1,176 @@
+
+/* Enhanced Premium Auth Styles */
+body {
+    background-color: #f4f7f9;
+}
+
+.auth-banner {
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.auth-banner::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(135deg, rgba(31,31,37,0.7) 0%, rgba(255,74,87,0.85) 100%);
+    z-index: 1;
+}
+
+.auth-banner-content {
+    position: relative;
+    z-index: 2;
+    padding: 4rem;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.auth-form-container {
+    max-width: 600px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.auth-form-card {
+    background: rgba(255, 255, 255, 0.95);
+    backdrop-filter: blur(20px);
+    border: 1px solid rgba(255, 74, 87, 0.1);
+    border-radius: 24px;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.05), 0 0 0 8px rgba(255, 255, 255, 0.6);
+}
+
+/* Custom Input Styles */
+.custom-input {
+    background: #ffffff;
+    border: 2px solid #eef0f2;
+    border-radius: 14px;
+    padding: 1rem 1.2rem;
+    padding-left: 3.2rem;
+    font-size: 1rem;
+    color: #333;
+    transition: all 0.3s cubic-bezier(0.25, 1, 0.5, 1);
+}
+
+.custom-input:focus {
+    background: #ffffff;
+    border-color: var(--primary-color);
+    box-shadow: 0 0 0 4px rgba(255, 74, 87, 0.15);
+    transform: translateY(-2px);
+}
+
+.input-icon {
+    position: absolute;
+    top: 50%;
+    left: 1.2rem;
+    transform: translateY(-50%);
+    color: #a0aab5;
+    z-index: 5;
+    transition: color 0.3s ease;
+}
+
+.position-relative:focus-within .input-icon {
+    color: var(--primary-color);
+}
+
+.toggle-password {
+    position: absolute;
+    top: 50%;
+    right: 1.2rem;
+    transform: translateY(-50%);
+    color: #a0aab5;
+    cursor: pointer;
+    z-index: 5;
+    background: transparent;
+    border: none;
+    transition: color 0.3s ease;
+}
+.toggle-password:hover {
+    color: var(--primary-color);
+}
+
+/* Role Radio Cards */
+.role-card-input {
+    display: none;
+}
+.role-card-label {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 12px 15px;
+    background: #ffffff;
+    border: 2px solid #eef0f2;
+    border-radius: 14px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-weight: 600;
+    color: #6c757d;
+}
+.role-card-input:checked + .role-card-label {
+    background: rgba(255,74,87,0.05);
+    border-color: var(--primary-color);
+    color: var(--primary-color);
+    box-shadow: 0 4px 10px rgba(255,74,87,0.15);
+}
+.role-card-label:hover {
+    background: #f8f9fa;
+    transform: translateY(-2px);
+}
+
+/* Submit Button Upgrade */
+.auth-submit-btn {
+    background: linear-gradient(135deg, var(--primary-color) 0%, #ff7b5a 100%);
+    border: none;
+    border-radius: 14px;
+    color: white;
+    box-shadow: 0 10px 20px rgba(255, 74, 87, 0.3);
+    transition: all 0.3s ease;
+}
+.auth-submit-btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 15px 25px rgba(255, 74, 87, 0.4);
+    color: white;
+}
+
+/* Password Strength Meter */
+.strength-bar {
+    height: 6px;
+    background-color: #eef0f2;
+    transition: all 0.4s ease;
+}
+.strength-bar.active-weak { background-color: #ff4a57; box-shadow: 0 0 8px rgba(255,74,87,0.4); }
+.strength-bar.active-fair { background-color: #ffc107; box-shadow: 0 0 8px rgba(255,193,7,0.4); }
+.strength-bar.active-good { background-color: #17a2b8; box-shadow: 0 0 8px rgba(23,162,184,0.4); }
+.strength-bar.active-strong { background-color: #28a745; box-shadow: 0 0 8px rgba(40,167,69,0.4); }
+
+.back-btn {
+    position: absolute;
+    top: 2rem;
+    right: 2rem;
+    z-index: 10;
+}
+
+/* Theme colored logo mask */
+.theme-logo-mask {
+    background-color: var(--primary-color);
+    -webkit-mask: url('../images/logoStackly.webp') no-repeat center / contain;
+    mask: url('../images/logoStackly.webp') no-repeat center / contain;
+    display: inline-block;
+}
+
+@media (max-width: 991px) {
+    .back-btn {
+        top: 1.5rem;
+        right: 1.5rem;
+    }
+    .auth-form-card {
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.05);
+        border: none;
+    }
+}

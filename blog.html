@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog | Creative Agency Portfolio</title>
+    <link rel="icon" type="image/webp" href="assets/images/logoStackly.webp">
+    
+    <!-- CSS Libraries -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    
+    <!-- AOS Animation -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body class="bg-light">
+
+    <!-- Header Placeholder -->
+    <div id="header-placeholder"></div>
+
+    <!-- 1. Page Banner -->
+    <section class="page-banner position-relative overflow-hidden" style="background: url('assets/images/img_05.webp') center/cover fixed;">
+        <div class="banner-overlay" style="position:absolute; top:0; left:0; width:100%; height:100%; background:linear-gradient(135deg, rgba(255,74,87,0.95) 0%, rgba(31,31,37,0.95) 100%);"></div>
+        
+        <!-- Decorative Orbs -->
+        <div class="position-absolute bg-white rounded-circle" style="width: 300px; height: 300px; left: -100px; top: -100px; opacity: 0.1; filter: blur(50px);"></div>
+        <div class="position-absolute bg-warning rounded-circle" style="width: 250px; height: 250px; right: 5%; bottom: -50px; opacity: 0.1; filter: blur(50px);"></div>
+        
+        <div class="container position-relative z-index-1 text-center mt-5 py-5">
+            <h1 class="display-3 fw-bolder text-white mb-3" data-aos="zoom-in">Our Insights</h1>
+            <p class="lead text-white opacity-75 mb-4 mx-auto" style="max-width: 600px;" data-aos="fade-up" data-aos-delay="100">Thoughts, stories and ideas about design, tech, and business.</p>
+            <nav aria-label="breadcrumb" data-aos="fade-up" data-aos-delay="200" class="d-flex justify-content-center">
+                <ol class="breadcrumb bg-white bg-opacity-10 px-4 py-2 rounded-pill shadow-sm">
+                    <li class="breadcrumb-item"><a href="index.html" class="text-white text-decoration-none"><i class="fas fa-home me-1"></i> Home</a></li>
+                    <li class="breadcrumb-item active text-white fw-bold" aria-current="page">Blog</li>
+                </ol>
+            </nav>
+        </div>
+    </section>
+
+    <!-- 2. Featured Post -->
+    <section class="py-5 bg-white position-relative overflow-hidden">
+        <div class="container">
+            <div class="d-inline-flex align-items-center justify-content-center mb-4" data-aos="fade-right">
+                <span class="bg-primary-subtle text-primary fw-bold px-4 py-2 rounded-pill text-uppercase" style="font-size: 0.85rem; letter-spacing: 2px;"><i class="fas fa-star me-2"></i>Featured</span>
+            </div>
+            
+            <div class="card border-0 rounded-5 shadow-lg overflow-hidden featured-blog-card" data-aos="fade-up">
+                <div class="row g-0">
+                    <div class="col-lg-7">
+                        <div class="overflow-hidden h-100 position-relative">
+                            <img src="assets/images/img_06.webp" class="img-fluid w-100 h-100 object-fit-cover featured-blog-img" alt="Featured Post">
+                            <div class="position-absolute top-0 start-0 m-4">
+                                <span class="badge bg-primary px-3 py-2 rounded-pill fs-6 shadow">Technology</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-5 d-flex align-items-center bg-dark text-white position-relative">
+                        <!-- Background glow effect -->
+                        <div class="position-absolute top-50 start-50 translate-middle w-100 h-100 bg-primary opacity-10" style="filter: blur(80px);"></div>
+                        
+                        <div class="p-4 p-md-5 position-relative z-index-1">
+                            <p class="text-white opacity-75 small text-uppercase letter-spacing-1 mb-3"><i class="far fa-calendar-alt me-2 text-primary"></i> Oct 24, 2026</p>
+                            <h2 class="display-6 fw-bold mb-4 text-white">The Future of Web Design: AI and 3D Rendering</h2>
+                            <p class="lead opacity-75 mb-4 pb-2" style="font-size: 1.1rem; line-height: 1.8;">Discover how Artificial Intelligence and browser-based 3D rendering are completely reshaping the digital landscape and user expectations.</p>
+                            
+                            <div class="d-flex align-items-center justify-content-between border-top border-secondary pt-4">
+                                <div class="d-flex align-items-center">
+                                    <img src="assets/images/img_07.webp" class="rounded-circle border border-2 border-primary me-3" style="width: 50px; height: 50px; object-fit: cover;" alt="Author">
+                                    <div>
+                                        <h6 class="fw-bold mb-0 text-white">Sarah Jenkins</h6>
+                                        <small class="text-white opacity-50">Lead Designer</small>
+                                    </div>
+                                </div>
+                                <a href="#" class="btn btn-outline-light rounded-circle d-flex align-items-center justify-content-center transition-hover" style="width: 45px; height: 45px;">
+                                    <i class="fas fa-arrow-right"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 3. Blog Grid Section -->
+    <section class="py-5 bg-light position-relative">
+        <div class="container">
+            
+            <!-- Category Filters -->
+            <div class="row mb-5 align-items-center">
+                <div class="col-lg-4 mb-4 mb-lg-0" data-aos="fade-right">
+                    <h2 class="display-6 fw-bolder mb-0">Latest <span class="text-primary-gradient">Articles</span></h2>
+                </div>
+                <div class="col-lg-8" data-aos="fade-left">
+                    <div class="d-flex flex-wrap gap-2 justify-content-lg-end">
+                        <button class="btn btn-primary rounded-pill px-4 fw-bold shadow-sm">All</button>
+                        <button class="btn btn-outline-dark bg-white rounded-pill px-4 fw-bold shadow-sm border-0 text-muted transition-hover">Design</button>
+                        <button class="btn btn-outline-dark bg-white rounded-pill px-4 fw-bold shadow-sm border-0 text-muted transition-hover">Development</button>
+                        <button class="btn btn-outline-dark bg-white rounded-pill px-4 fw-bold shadow-sm border-0 text-muted transition-hover">Marketing</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Grid -->
+            <div class="row g-4 g-lg-5">
+                <!-- Post 1 -->
+                <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="100">
+                    <div class="card border-0 rounded-4 shadow-sm h-100 bg-white blog-card-premium overflow-hidden transition-hover">
+                        <div class="position-relative overflow-hidden" style="height: 240px;">
+                            <img src="assets/images/img_08.webp" class="img-fluid w-100 h-100 object-fit-cover blog-img" alt="Blog 1">
+                            <span class="position-absolute top-0 end-0 bg-white text-primary fw-bold px-3 py-1 rounded-bl-4 m-0 shadow-sm" style="border-bottom-left-radius: 15px;">Development</span>
+                        </div>
+                        <div class="card-body p-4 p-xl-5 d-flex flex-column">
+                            <p class="text-muted small text-uppercase letter-spacing-1 fw-semibold mb-2"><i class="far fa-calendar text-primary me-2"></i> Oct 18, 2026</p>
+                            <h4 class="fw-bold mb-3 blog-title"><a href="#" class="text-dark text-decoration-none transition-hover">Mastering React Hooks in 2026</a></h4>
+                            <p class="text-muted mb-4 flex-grow-1" style="line-height: 1.6;">A comprehensive guide to understanding and implementing advanced React Hooks for cleaner code.</p>
+                            <div class="d-flex align-items-center justify-content-between pt-3 border-top border-light">
+                                <span class="fw-bold text-dark small"><i class="far fa-user-circle text-primary me-1"></i> Alex Doe</span>
+                                <a href="#" class="text-primary fw-bold text-decoration-none read-more-link">Read <i class="fas fa-arrow-right ms-1 fs-7"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Post 2 -->
+                <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="200">
+                    <div class="card border-0 rounded-4 shadow-sm h-100 bg-white blog-card-premium overflow-hidden transition-hover">
+                        <div class="position-relative overflow-hidden" style="height: 240px;">
+                            <img src="assets/images/img_09.webp" class="img-fluid w-100 h-100 object-fit-cover blog-img" alt="Blog 2">
+                            <span class="position-absolute top-0 end-0 bg-white text-primary fw-bold px-3 py-1 rounded-bl-4 m-0 shadow-sm" style="border-bottom-left-radius: 15px;">Design</span>
+                        </div>
+                        <div class="card-body p-4 p-xl-5 d-flex flex-column">
+                            <p class="text-muted small text-uppercase letter-spacing-1 fw-semibold mb-2"><i class="far fa-calendar text-primary me-2"></i> Oct 12, 2026</p>
+                            <h4 class="fw-bold mb-3 blog-title"><a href="#" class="text-dark text-decoration-none transition-hover">Color Theory in UI Design</a></h4>
+                            <p class="text-muted mb-4 flex-grow-1" style="line-height: 1.6;">How to choose the perfect color palette to increase user engagement and brand trust.</p>
+                            <div class="d-flex align-items-center justify-content-between pt-3 border-top border-light">
+                                <span class="fw-bold text-dark small"><i class="far fa-user-circle text-primary me-1"></i> Sarah Jenkins</span>
+                                <a href="#" class="text-primary fw-bold text-decoration-none read-more-link">Read <i class="fas fa-arrow-right ms-1 fs-7"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Post 3 -->
+                <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="300">
+                    <div class="card border-0 rounded-4 shadow-sm h-100 bg-white blog-card-premium overflow-hidden transition-hover">
+                        <div class="position-relative overflow-hidden" style="height: 240px;">
+                            <img src="assets/images/img_10.webp" class="img-fluid w-100 h-100 object-fit-cover blog-img" alt="Blog 3">
+                            <span class="position-absolute top-0 end-0 bg-white text-primary fw-bold px-3 py-1 rounded-bl-4 m-0 shadow-sm" style="border-bottom-left-radius: 15px;">Marketing</span>
+                        </div>
+                        <div class="card-body p-4 p-xl-5 d-flex flex-column">
+                            <p class="text-muted small text-uppercase letter-spacing-1 fw-semibold mb-2"><i class="far fa-calendar text-primary me-2"></i> Oct 05, 2026</p>
+                            <h4 class="fw-bold mb-3 blog-title"><a href="#" class="text-dark text-decoration-none transition-hover">SEO Strategies for Startups</a></h4>
+                            <p class="text-muted mb-4 flex-grow-1" style="line-height: 1.6;">Actionable SEO tactics that can help newly launched startups rank on Google's first page.</p>
+                            <div class="d-flex align-items-center justify-content-between pt-3 border-top border-light">
+                                <span class="fw-bold text-dark small"><i class="far fa-user-circle text-primary me-1"></i> Mike Ross</span>
+                                <a href="#" class="text-primary fw-bold text-decoration-none read-more-link">Read <i class="fas fa-arrow-right ms-1 fs-7"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Post 4 -->
+                <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="400">
+                    <div class="card border-0 rounded-4 shadow-sm h-100 bg-white blog-card-premium overflow-hidden transition-hover">
+                        <div class="position-relative overflow-hidden" style="height: 240px;">
+                            <img src="assets/images/img_11.webp" class="img-fluid w-100 h-100 object-fit-cover blog-img" alt="Blog 4">
+                            <span class="position-absolute top-0 end-0 bg-white text-primary fw-bold px-3 py-1 rounded-bl-4 m-0 shadow-sm" style="border-bottom-left-radius: 15px;">Development</span>
+                        </div>
+                        <div class="card-body p-4 p-xl-5 d-flex flex-column">
+                            <p class="text-muted small text-uppercase letter-spacing-1 fw-semibold mb-2"><i class="far fa-calendar text-primary me-2"></i> Sep 28, 2026</p>
+                            <h4 class="fw-bold mb-3 blog-title"><a href="#" class="text-dark text-decoration-none transition-hover">Building Scalable APIs</a></h4>
+                            <p class="text-muted mb-4 flex-grow-1" style="line-height: 1.6;">Best practices for designing RESTful APIs that can handle millions of requests.</p>
+                            <div class="d-flex align-items-center justify-content-between pt-3 border-top border-light">
+                                <span class="fw-bold text-dark small"><i class="far fa-user-circle text-primary me-1"></i> Alex Doe</span>
+                                <a href="#" class="text-primary fw-bold text-decoration-none read-more-link">Read <i class="fas fa-arrow-right ms-1 fs-7"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Post 5 -->
+                <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="500">
+                    <div class="card border-0 rounded-4 shadow-sm h-100 bg-white blog-card-premium overflow-hidden transition-hover">
+                        <div class="position-relative overflow-hidden" style="height: 240px;">
+                            <img src="assets/images/img_12.webp" class="img-fluid w-100 h-100 object-fit-cover blog-img" alt="Blog 5">
+                            <span class="position-absolute top-0 end-0 bg-white text-primary fw-bold px-3 py-1 rounded-bl-4 m-0 shadow-sm" style="border-bottom-left-radius: 15px;">Marketing</span>
+                        </div>
+                        <div class="card-body p-4 p-xl-5 d-flex flex-column">
+                            <p class="text-muted small text-uppercase letter-spacing-1 fw-semibold mb-2"><i class="far fa-calendar text-primary me-2"></i> Sep 15, 2026</p>
+                            <h4 class="fw-bold mb-3 blog-title"><a href="#" class="text-dark text-decoration-none transition-hover">Content Marketing Guide</a></h4>
+                            <p class="text-muted mb-4 flex-grow-1" style="line-height: 1.6;">How to create content that not only attracts visitors but converts them into loyal customers.</p>
+                            <div class="d-flex align-items-center justify-content-between pt-3 border-top border-light">
+                                <span class="fw-bold text-dark small"><i class="far fa-user-circle text-primary me-1"></i> Mike Ross</span>
+                                <a href="#" class="text-primary fw-bold text-decoration-none read-more-link">Read <i class="fas fa-arrow-right ms-1 fs-7"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Post 6 -->
+                <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="600">
+                    <div class="card border-0 rounded-4 shadow-sm h-100 bg-white blog-card-premium overflow-hidden transition-hover">
+                        <div class="position-relative overflow-hidden" style="height: 240px;">
+                            <img src="assets/images/img_13.webp" class="img-fluid w-100 h-100 object-fit-cover blog-img" alt="Blog 6">
+                            <span class="position-absolute top-0 end-0 bg-white text-primary fw-bold px-3 py-1 rounded-bl-4 m-0 shadow-sm" style="border-bottom-left-radius: 15px;">Design</span>
+                        </div>
+                        <div class="card-body p-4 p-xl-5 d-flex flex-column">
+                            <p class="text-muted small text-uppercase letter-spacing-1 fw-semibold mb-2"><i class="far fa-calendar text-primary me-2"></i> Sep 02, 2026</p>
+                            <h4 class="fw-bold mb-3 blog-title"><a href="#" class="text-dark text-decoration-none transition-hover">Minimalism in 2026</a></h4>
+                            <p class="text-muted mb-4 flex-grow-1" style="line-height: 1.6;">Why less is more, and how minimalist interfaces are dominating the digital space.</p>
+                            <div class="d-flex align-items-center justify-content-between pt-3 border-top border-light">
+                                <span class="fw-bold text-dark small"><i class="far fa-user-circle text-primary me-1"></i> Sarah Jenkins</span>
+                                <a href="#" class="text-primary fw-bold text-decoration-none read-more-link">Read <i class="fas fa-arrow-right ms-1 fs-7"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Pagination -->
+            <div class="row mt-5">
+                <div class="col-12" data-aos="fade-up">
+                    <ul class="pagination justify-content-center gap-2">
+                        <li class="page-item disabled">
+                            <a class="page-link rounded-circle d-flex align-items-center justify-content-center border-0 shadow-sm" href="#" style="width: 45px; height: 45px;"><i class="fas fa-chevron-left"></i></a>
+                        </li>
+                        <li class="page-item active">
+                            <a class="page-link rounded-circle d-flex align-items-center justify-content-center border-0 shadow-sm bg-primary text-white" href="#" style="width: 45px; height: 45px;">1</a>
+                        </li>
+                        <li class="page-item">
+                            <a class="page-link rounded-circle d-flex align-items-center justify-content-center border-0 shadow-sm text-dark transition-hover" href="#" style="width: 45px; height: 45px;">2</a>
+                        </li>
+                        <li class="page-item">
+                            <a class="page-link rounded-circle d-flex align-items-center justify-content-center border-0 shadow-sm text-dark transition-hover" href="#" style="width: 45px; height: 45px;">3</a>
+                        </li>
+                        <li class="page-item">
+                            <a class="page-link rounded-circle d-flex align-items-center justify-content-center border-0 shadow-sm text-dark transition-hover" href="#" style="width: 45px; height: 45px;"><i class="fas fa-chevron-right"></i></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            
+        </div>
+    </section>
+
+    <!-- 4. Newsletter CTA -->
+    <section class="py-5 bg-white position-relative overflow-hidden border-top border-light">
+        <div class="container">
+            <div class="p-4 p-md-5 rounded-5 shadow-lg position-relative overflow-hidden text-center" style="background: linear-gradient(135deg, var(--primary-color) 0%, #e03e4b 100%);" data-aos="zoom-in">
+                <!-- Floating geometric shapes -->
+                <div class="position-absolute rounded-circle bg-white opacity-10" style="width: 200px; height: 200px; top: -50px; left: -50px;"></div>
+                <div class="position-absolute rounded-circle bg-white opacity-10" style="width: 150px; height: 150px; bottom: -50px; right: 10%;"></div>
+                
+                <div class="position-relative z-index-1">
+                    <i class="far fa-envelope-open display-4 text-white opacity-75 mb-4"></i>
+                    <h2 class="display-6 fw-bolder mb-3 text-white">Subscribe to our Newsletter</h2>
+                    <p class="mb-5 opacity-75 fs-5 text-white mx-auto" style="max-width: 600px;">Get the latest articles, design trends, and development insights delivered straight to your inbox.</p>
+                    
+                    <form class="mx-auto" style="max-width: 500px;">
+                        <div class="input-group input-group-lg shadow-sm rounded-pill p-1 bg-white">
+                            <input type="email" class="form-control border-0 rounded-pill ps-4 bg-transparent" placeholder="Your email address" required style="box-shadow: none;">
+                            <button class="btn btn-primary rounded-pill px-4 fw-bold" type="submit">Subscribe</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Placeholder -->
+    <div id="footer-placeholder"></div>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="assets/js/script.js"></script>
+</body>
+</html>

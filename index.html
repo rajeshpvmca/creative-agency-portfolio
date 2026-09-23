@@ -1,0 +1,991 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home | Creative Agency Portfolio</title>
+    <link rel="icon" type="image/webp" href="assets/images/logoStackly.webp">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <!-- Swiper CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <!-- AOS CSS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+
+<body>
+    <div id="header-placeholder"></div>
+
+
+    <!-- Swiper Hero Section -->
+    <section class="hero-swiper-container">
+        <div class="swiper heroSwiper">
+            <div class="swiper-wrapper">
+                <!-- Slide 1 -->
+                <div class="swiper-slide">
+                    <div class="slide-bg"
+                        style="background-image: url('assets/images/img_12.webp');">
+                    </div>
+                    <div class="slide-overlay"></div>
+                    <div class="container slide-content text-center">
+                        <div data-swiper-parallax="-600" data-swiper-parallax-opacity="0">
+                            <span class="eyebrow-text text-uppercase fw-bold">Welcome to Stackly</span>
+                        </div>
+                        <h1 class="display-3 fw-bolder text-white mt-3 mb-4 hero-title" data-swiper-parallax="-400"
+                            data-swiper-parallax-opacity="0">
+                            We Craft <span class="text-primary-gradient">Digital</span> Experiences
+                        </h1>
+                        <p class="lead text-light mb-5 hero-subtitle mx-auto" style="max-width: 700px;"
+                            data-swiper-parallax="-200" data-swiper-parallax-opacity="0">
+                            Creative solutions for innovative brands. Stand out from the crowd with our cutting-edge
+                            design and development.
+                        </p>
+                        <div data-swiper-parallax="-100" data-swiper-parallax-opacity="0"
+                            class="d-flex justify-content-center flex-wrap gap-3">
+                            <a href="portfolio.html" class="btn btn-primary btn-lg px-5 py-3 rounded-pill hero-btn">
+                                View Our Work <i class="fas fa-arrow-right ms-2"></i>
+                            </a>
+                            <a href="contact.html" class="btn btn-outline-light btn-lg px-5 py-3 rounded-pill hero-btn">
+                                Contact Us
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Slide 2 -->
+                <div class="swiper-slide">
+                    <div class="slide-bg"
+                        style="background-image: url('assets/images/img_15.webp');">
+                    </div>
+                    <div class="slide-overlay"></div>
+                    <div class="container slide-content text-center">
+                        <div data-swiper-parallax="-600" data-swiper-parallax-opacity="0">
+                            <span class="eyebrow-text text-uppercase fw-bold">Innovation Driven</span>
+                        </div>
+                        <h1 class="display-3 fw-bolder text-white mt-3 mb-4 hero-title" data-swiper-parallax="-400"
+                            data-swiper-parallax-opacity="0">
+                            Future-Ready <span class="text-primary-gradient">Technology</span>
+                        </h1>
+                        <p class="lead text-light mb-5 hero-subtitle mx-auto" style="max-width: 700px;"
+                            data-swiper-parallax="-200" data-swiper-parallax-opacity="0">
+                            Building intelligent, scalable, and cutting-edge digital platforms tailored for your
+                            business needs.
+                        </p>
+                        <div data-swiper-parallax="-100" data-swiper-parallax-opacity="0"
+                            class="d-flex justify-content-center flex-wrap gap-3">
+                            <a href="services.html" class="btn btn-primary btn-lg px-5 py-3 rounded-pill hero-btn">
+                                Discover Services <i class="fas fa-arrow-right ms-2"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Slide 3 -->
+                <div class="swiper-slide">
+                    <div class="slide-bg"
+                        style="background-image: url('assets/images/img_01.webp');">
+                    </div>
+                    <div class="slide-overlay"></div>
+                    <div class="container slide-content text-center">
+                        <div data-swiper-parallax="-600" data-swiper-parallax-opacity="0">
+                            <span class="eyebrow-text text-uppercase fw-bold">Achieve More</span>
+                        </div>
+                        <h1 class="display-3 fw-bolder text-white mt-3 mb-4 hero-title" data-swiper-parallax="-400"
+                            data-swiper-parallax-opacity="0">
+                            Strategic <span class="text-primary-gradient">Brand Growth</span>
+                        </h1>
+                        <p class="lead text-light mb-5 hero-subtitle mx-auto" style="max-width: 700px;"
+                            data-swiper-parallax="-200" data-swiper-parallax-opacity="0">
+                            We connect the dots between your vision and user satisfaction, driving measurable results
+                            every time.
+                        </p>
+                        <div data-swiper-parallax="-100" data-swiper-parallax-opacity="0"
+                            class="d-flex justify-content-center flex-wrap gap-3">
+                            <a href="about.html" class="btn btn-primary btn-lg px-5 py-3 rounded-pill hero-btn">
+                                Meet The Team <i class="fas fa-arrow-right ms-2"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Pagination & Navigation -->
+            <div class="swiper-pagination"></div>
+            <!-- <div class="swiper-button-next text-white"></div>
+            <div class="swiper-button-prev text-white"></div> -->
+        </div>
+    </section>
+
+
+
+    <!-- Enhanced About Section -->
+    <section class="py-5 bg-light position-relative overflow-hidden">
+        <div class="container">
+            <div class="row align-items-center">
+                <!-- Image Side -->
+                <div class="col-lg-6 mb-5 mb-lg-0 position-relative" data-aos="fade-right">
+                    <div class="about-img-wrapper position-relative text-center text-lg-start">
+                        <img src="assets/images/img_01.webp"
+                            class="img-fluid rounded-4 shadow-lg main-about-img w-100" style="max-width: 90%;"
+                            alt="About Us">
+                        <!-- Floating Badge -->
+                        <div class="experience-badge bg-primary text-white text-center p-4 rounded-4 shadow-lg position-absolute"
+                            data-aos="zoom-in" data-aos-delay="300">
+                            <h2 class="display-4 fw-bolder mb-0 text-white">10+</h2>
+                            <p class="mb-0 fw-semibold text-uppercase letter-spacing-1" style="font-size: 0.85rem;">
+                                Years of<br>Experience</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Content Side -->
+                <div class="col-lg-6 ps-lg-5" data-aos="fade-left">
+                    <div class="d-flex align-items-center mb-3" data-aos="fade-up">
+                        <span class="bg-primary-subtle text-primary fw-bold px-3 py-1 rounded-pill text-uppercase"
+                            style="font-size: 0.85rem; letter-spacing: 1px;">Who We Are</span>
+                        <div class="ms-3 bg-primary" style="height: 2px; width: 50px;"></div>
+                    </div>
+                    <h2 class="display-5 fw-bolder mb-4" data-aos="fade-up" data-aos-delay="100">
+                        <span class="text-primary-gradient">Award-Winning</span><br>Creative Agency
+                    </h2>
+                    <p class="text-muted fs-5 mb-4" data-aos="fade-up" data-aos-delay="150" style="line-height: 1.8;">
+                        We combine strategy, design, and technology to build modern digital products that users love.
+                        With a focus on aesthetics and performance, we elevate your brand's digital presence.
+                    </p>
+
+                    <div class="row g-3 mb-5" data-aos="fade-up" data-aos-delay="200">
+                        <div class="col-sm-6">
+                            <div class="d-flex align-items-center bg-white p-3 rounded-3 shadow-sm feature-item">
+                                <div class="icon-box bg-primary-subtle text-primary rounded-circle d-flex align-items-center justify-content-center me-3"
+                                    style="width: 45px; height: 45px;">
+                                    <i class="fas fa-bullseye fs-5"></i>
+                                </div>
+                                <h6 class="mb-0 fw-bold text-dark">Strategic Vision</h6>
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="d-flex align-items-center bg-white p-3 rounded-3 shadow-sm feature-item">
+                                <div class="icon-box bg-primary-subtle text-primary rounded-circle d-flex align-items-center justify-content-center me-3"
+                                    style="width: 45px; height: 45px;">
+                                    <i class="fas fa-magic fs-5"></i>
+                                </div>
+                                <h6 class="mb-0 fw-bold text-dark">Creative Design</h6>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div data-aos="fade-up" data-aos-delay="300">
+                        <a href="about.html" class="btn btn-primary btn-lg px-5 py-3 rounded-pill hero-btn shadow-lg">
+                            Discover More <i class="fas fa-arrow-right ms-2"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- Enhanced Expertise Section -->
+    <section class="py-5 position-relative expertise-section">
+        <div class="container text-center">
+            <div class="d-inline-flex align-items-center justify-content-center mb-3" data-aos="fade-up">
+                <span class="bg-primary-subtle text-primary fw-bold px-4 py-2 rounded-pill text-uppercase"
+                    style="font-size: 0.85rem; letter-spacing: 2px;">What We Do</span>
+            </div>
+            <h2 class="display-5 fw-bolder mb-5" data-aos="fade-up" data-aos-delay="100">Our <span
+                    class="text-primary-gradient">Expertise</span></h2>
+
+            <div class="row g-4 mt-2">
+                <!-- Service 1 -->
+                <div class="col-md-4" data-aos="fade-up" data-aos-delay="150">
+                    <div
+                        class="expertise-card bg-white h-100 p-5 rounded-4 shadow-sm position-relative overflow-hidden text-start">
+                        <div
+                            class="icon-wrapper bg-primary-subtle text-primary mb-4 d-flex align-items-center justify-content-center rounded-3">
+                            <i class="fas fa-paint-brush fs-3"></i>
+                        </div>
+                        <h4 class="fw-bold mb-3">UI/UX Design</h4>
+                        <p class="text-muted mb-4">We create intuitive, engaging, and aesthetically pleasing user
+                            interfaces that elevate the overall user experience.</p>
+                        <a href="services.html"
+                            class="expertise-link text-primary fw-bold text-decoration-none d-inline-flex align-items-center">
+                            Learn More <i class="fas fa-arrow-right ms-2 transition-arrow"></i>
+                        </a>
+                    </div>
+                </div>
+                <!-- Service 2 -->
+                <div class="col-md-4" data-aos="fade-up" data-aos-delay="250">
+                    <div
+                        class="expertise-card bg-white h-100 p-5 rounded-4 shadow-sm position-relative overflow-hidden text-start">
+                        <div
+                            class="icon-wrapper bg-primary-subtle text-primary mb-4 d-flex align-items-center justify-content-center rounded-3">
+                            <i class="fas fa-code fs-3"></i>
+                        </div>
+                        <h4 class="fw-bold mb-3">Web Development</h4>
+                        <p class="text-muted mb-4">Robust, scalable, and high-performance web applications built using
+                            modern frameworks and cutting-edge tech.</p>
+                        <a href="services.html"
+                            class="expertise-link text-primary fw-bold text-decoration-none d-inline-flex align-items-center">
+                            Learn More <i class="fas fa-arrow-right ms-2 transition-arrow"></i>
+                        </a>
+                    </div>
+                </div>
+                <!-- Service 3 -->
+                <div class="col-md-4" data-aos="fade-up" data-aos-delay="350">
+                    <div
+                        class="expertise-card bg-white h-100 p-5 rounded-4 shadow-sm position-relative overflow-hidden text-start">
+                        <div
+                            class="icon-wrapper bg-primary-subtle text-primary mb-4 d-flex align-items-center justify-content-center rounded-3">
+                            <i class="fas fa-mobile-alt fs-3"></i>
+                        </div>
+                        <h4 class="fw-bold mb-3">App Development</h4>
+                        <p class="text-muted mb-4">Native and cross-platform mobile apps tailored to bring your business
+                            directly to your customers' fingertips.</p>
+                        <a href="services.html"
+                            class="expertise-link text-primary fw-bold text-decoration-none d-inline-flex align-items-center">
+                            Learn More <i class="fas fa-arrow-right ms-2 transition-arrow"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- Enhanced Portfolio Section -->
+    <section class="py-5 bg-light position-relative portfolio-section">
+        <div class="container">
+            <div class="text-center mb-5">
+                <div class="d-inline-flex align-items-center justify-content-center mb-3" data-aos="fade-up">
+                    <span class="bg-primary-subtle text-primary fw-bold px-4 py-2 rounded-pill text-uppercase"
+                        style="font-size: 0.85rem; letter-spacing: 2px;">Our Work</span>
+                </div>
+                <h2 class="display-5 fw-bolder" data-aos="fade-up" data-aos-delay="100">Selected <span
+                        class="text-primary-gradient">Projects</span></h2>
+            </div>
+
+            <div class="row g-4">
+                <!-- Project 1 -->
+                <div class="col-md-4" data-aos="fade-up" data-aos-delay="150">
+                    <div class="portfolio-item rounded-4 overflow-hidden position-relative shadow-sm">
+                        <img src="assets/images/img_11.webp"
+                            class="img-fluid w-100 portfolio-img" alt="Project 1">
+                        <div class="portfolio-overlay d-flex flex-column justify-content-end p-4">
+                            <div class="overlay-content">
+                                <span class="badge bg-primary mb-2 px-3 py-2 rounded-pill">Web Design</span>
+                                <h4 class="text-white fw-bold mb-2">E-Commerce Platform</h4>
+                                <a href="portfolio.html"
+                                    class="text-white text-decoration-none view-project-link fw-semibold">
+                                    View Project <i class="fas fa-arrow-right ms-1"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Project 2 -->
+                <div class="col-md-4" data-aos="fade-up" data-aos-delay="250">
+                    <div class="portfolio-item rounded-4 overflow-hidden position-relative shadow-sm">
+                        <img src="assets/images/img_10.webp"
+                            class="img-fluid w-100 portfolio-img" alt="Project 2">
+                        <div class="portfolio-overlay d-flex flex-column justify-content-end p-4">
+                            <div class="overlay-content">
+                                <span class="badge bg-primary mb-2 px-3 py-2 rounded-pill">Branding</span>
+                                <h4 class="text-white fw-bold mb-2">Fintech Dashboard</h4>
+                                <a href="portfolio.html"
+                                    class="text-white text-decoration-none view-project-link fw-semibold">
+                                    View Project <i class="fas fa-arrow-right ms-1"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Project 3 -->
+                <div class="col-md-4" data-aos="fade-up" data-aos-delay="350">
+                    <div class="portfolio-item rounded-4 overflow-hidden position-relative shadow-sm">
+                        <img src="assets/images/img_16.webp"
+                            class="img-fluid w-100 portfolio-img" alt="Project 3">
+                        <div class="portfolio-overlay d-flex flex-column justify-content-end p-4">
+                            <div class="overlay-content">
+                                <span class="badge bg-primary mb-2 px-3 py-2 rounded-pill">App Dev</span>
+                                <h4 class="text-white fw-bold mb-2">Social Media App</h4>
+                                <a href="portfolio.html"
+                                    class="text-white text-decoration-none view-project-link fw-semibold">
+                                    View Project <i class="fas fa-arrow-right ms-1"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="text-center mt-5" data-aos="fade-up" data-aos-delay="400">
+                <a href="portfolio.html" class="btn btn-outline-primary btn-lg px-5 py-3 rounded-pill hero-btn fw-bold">
+                    View All Projects
+                </a>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- Enhanced Why Choose Us Section -->
+    <section class="py-5 position-relative why-choose-section overflow-hidden">
+        <!-- Decorative Background Element -->
+        <div class="bg-glow-orb"></div>
+
+        <div class="container py-lg-5 position-relative z-index-1">
+            <div class="row align-items-center">
+                <!-- Left Column: Text -->
+                <div class="col-lg-5 mb-5 mb-lg-0 text-center text-lg-start" data-aos="fade-right">
+                    <div class="d-inline-flex align-items-center justify-content-center justify-content-lg-start mb-3">
+                        <span class="bg-white text-dark fw-bold px-4 py-2 rounded-pill text-uppercase"
+                            style="font-size: 0.85rem; letter-spacing: 2px;">Our Edge</span>
+                    </div>
+                    <h2 class="display-5 fw-bolder text-white mb-4">
+                        Why <span class="text-primary-gradient">Choose Us?</span>
+                    </h2>
+                    <p class="lead text-light mb-4 opacity-75" style="font-size: 1.1rem; line-height: 1.8;">
+                        We don't just build websites; we craft digital experiences that drive real business results. Our
+                        passion, expertise, and commitment to excellence set us apart.
+                    </p>
+                    <a href="about.html" class="btn btn-primary btn-lg px-5 py-3 rounded-pill hero-btn mt-3 shadow-lg">
+                        Know More About Us
+                    </a>
+                </div>
+
+                <!-- Right Column: Grid -->
+                <div class="col-lg-7 ps-lg-5">
+                    <div class="row g-4">
+                        <div class="col-md-6" data-aos="fade-up" data-aos-delay="100">
+                            <div class="why-card p-4 p-sm-5 rounded-4 bg-glass border-glass h-100 text-start">
+                                <div
+                                    class="icon-circle bg-primary text-white mb-4 d-flex align-items-center justify-content-center">
+                                    <i class="fas fa-rocket fs-4"></i>
+                                </div>
+                                <h4 class="text-white fw-bold mb-3">Fast Delivery</h4>
+                                <p class="text-light opacity-75 mb-0" style="font-size: 0.95rem;">Agile workflows ensure
+                                    we deliver high-quality projects on time, every time without fail.</p>
+                            </div>
+                        </div>
+                        <div class="col-md-6" data-aos="fade-up" data-aos-delay="200">
+                            <div class="why-card p-4 p-sm-5 rounded-4 bg-glass border-glass h-100 mt-md-4 text-start">
+                                <div
+                                    class="icon-circle bg-primary text-white mb-4 d-flex align-items-center justify-content-center">
+                                    <i class="fas fa-users fs-4"></i>
+                                </div>
+                                <h4 class="text-white fw-bold mb-3">Expert Team</h4>
+                                <p class="text-light opacity-75 mb-0" style="font-size: 0.95rem;">Our team consists of
+                                    industry veterans with years of specialized digital experience.</p>
+                            </div>
+                        </div>
+                        <div class="col-md-6" data-aos="fade-up" data-aos-delay="300">
+                            <div class="why-card p-4 p-sm-5 rounded-4 bg-glass border-glass h-100 text-start">
+                                <div
+                                    class="icon-circle bg-primary text-white mb-4 d-flex align-items-center justify-content-center">
+                                    <i class="fas fa-headset fs-4"></i>
+                                </div>
+                                <h4 class="text-white fw-bold mb-3">24/7 Support</h4>
+                                <p class="text-light opacity-75 mb-0" style="font-size: 0.95rem;">We provide
+                                    round-the-clock priority support to keep your business running smoothly.</p>
+                            </div>
+                        </div>
+                        <div class="col-md-6" data-aos="fade-up" data-aos-delay="400">
+                            <div class="why-card p-4 p-sm-5 rounded-4 bg-glass border-glass h-100 mt-md-4 text-start">
+                                <div
+                                    class="icon-circle bg-primary text-white mb-4 d-flex align-items-center justify-content-center">
+                                    <i class="fas fa-chart-line fs-4"></i>
+                                </div>
+                                <h4 class="text-white fw-bold mb-3">Result Driven</h4>
+                                <p class="text-light opacity-75 mb-0" style="font-size: 0.95rem;">We focus on metrics
+                                    that matter, ensuring maximum ROI for your digital investment.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Enhanced Statistics Section -->
+    <section class="py-5 text-white position-relative stat-section" id="statistics-section">
+        <div class="stat-overlay"></div>
+        <div class="container position-relative z-index-1">
+            <div class="row text-center g-4">
+                <!-- Stat 1 -->
+                <div class="col-6 col-md-3" data-aos="fade-up" data-aos-delay="100">
+                    <div class="stat-box p-3 p-lg-4">
+                        <div class="stat-icon mb-3"><i class="fas fa-check-circle fs-2 text-white opacity-75"></i></div>
+                        <h2 class="display-4 fw-bolder stat-number mb-2"><span class="counter"
+                                data-target="150">0</span><span class="text-white opacity-75">+</span></h2>
+                        <p class="mb-0 text-uppercase fw-semibold tracking-wider"
+                            style="font-size: 0.85rem; letter-spacing: 1px;">Projects</p>
+                    </div>
+                </div>
+                <!-- Stat 2 -->
+                <div class="col-6 col-md-3" data-aos="fade-up" data-aos-delay="200">
+                    <div class="stat-box p-3 p-lg-4">
+                        <div class="stat-icon mb-3"><i class="fas fa-smile fs-2 text-white opacity-75"></i></div>
+                        <h2 class="display-4 fw-bolder stat-number mb-2"><span class="counter"
+                                data-target="95">0</span><span class="text-white opacity-75">%</span></h2>
+                        <p class="mb-0 text-uppercase fw-semibold tracking-wider"
+                            style="font-size: 0.85rem; letter-spacing: 1px;">Satisfaction</p>
+                    </div>
+                </div>
+                <!-- Stat 3 -->
+                <div class="col-6 col-md-3" data-aos="fade-up" data-aos-delay="300">
+                    <div class="stat-box p-3 p-lg-4">
+                        <div class="stat-icon mb-3"><i class="fas fa-trophy fs-2 text-white opacity-75"></i></div>
+                        <h2 class="display-4 fw-bolder stat-number mb-2"><span class="counter" data-target="12">0</span>
+                        </h2>
+                        <p class="mb-0 text-uppercase fw-semibold tracking-wider"
+                            style="font-size: 0.85rem; letter-spacing: 1px;">Awards</p>
+                    </div>
+                </div>
+                <!-- Stat 4 -->
+                <div class="col-6 col-md-3" data-aos="fade-up" data-aos-delay="400">
+                    <div class="stat-box p-3 p-lg-4">
+                        <div class="stat-icon mb-3"><i class="fas fa-headset fs-2 text-white opacity-75"></i></div>
+                        <h2 class="display-4 fw-bolder stat-number mb-2"><span class="counter"
+                                data-target="24">0</span><span class="text-white opacity-75">/7</span></h2>
+                        <p class="mb-0 text-uppercase fw-semibold tracking-wider"
+                            style="font-size: 0.85rem; letter-spacing: 1px;">Support</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Enhanced Testimonials Section -->
+    <section class="py-5 bg-light position-relative testimonial-section overflow-hidden">
+        <div class="container">
+            <div class="text-center mb-5">
+                <div class="d-inline-flex align-items-center justify-content-center mb-3" data-aos="fade-up">
+                    <span class="bg-primary-subtle text-primary fw-bold px-4 py-2 rounded-pill text-uppercase"
+                        style="font-size: 0.85rem; letter-spacing: 2px;">Testimonials</span>
+                </div>
+                <h2 class="display-5 fw-bolder" data-aos="fade-up" data-aos-delay="100">What Our <span
+                        class="text-primary-gradient">Clients Say</span></h2>
+            </div>
+
+            <div class="swiper testimonialSwiper pb-5" data-aos="fade-up" data-aos-delay="200">
+                <div class="swiper-wrapper">
+                    <!-- Testimonial 1 -->
+                    <div class="swiper-slide h-auto">
+                        <div
+                            class="card border-0 rounded-4 p-4 p-md-5 h-100 testimonial-card shadow-sm position-relative z-index-1">
+                            <i class="fas fa-quote-right quote-icon"></i>
+                            <div class="d-flex text-warning mb-3">
+                                <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                    class="fas fa-star"></i><i class="fas fa-star"></i>
+                            </div>
+                            <p class="fst-italic text-muted flex-grow-1 mb-4" style="line-height: 1.8;">"Working with
+                                Stackly was a game-changer. They completely transformed our brand identity! Their
+                                strategic vision and creative execution exceeded our expectations on every level."</p>
+                            <div class="d-flex align-items-center mt-auto">
+                                <img src="assets/images/img_17.webp"
+                                    alt="Sarah Johnson" class="rounded-circle me-3"
+                                    style="width: 60px; height: 60px; object-fit: cover;">
+                                <div>
+                                    <h6 class="fw-bold mb-1">Sarah Johnson</h6>
+                                    <p class="text-primary mb-0" style="font-size: 0.85rem;">CEO, TechNova</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Testimonial 2 -->
+                    <div class="swiper-slide h-auto">
+                        <div
+                            class="card border-0 rounded-4 p-4 p-md-5 h-100 testimonial-card shadow-sm position-relative z-index-1">
+                            <i class="fas fa-quote-right quote-icon"></i>
+                            <div class="d-flex text-warning mb-3">
+                                <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                    class="fas fa-star"></i><i class="fas fa-star"></i>
+                            </div>
+                            <p class="fst-italic text-muted flex-grow-1 mb-4" style="line-height: 1.8;">"An absolutely
+                                fantastic team. They delivered our project on time and the quality is outstanding. We
+                                saw a 40% increase in conversions within the first month of launch."</p>
+                            <div class="d-flex align-items-center mt-auto">
+                                <img src="assets/images/img_18.webp"
+                                    alt="Michael Chen" class="rounded-circle me-3"
+                                    style="width: 60px; height: 60px; object-fit: cover;">
+                                <div>
+                                    <h6 class="fw-bold mb-1">Michael Chen</h6>
+                                    <p class="text-primary mb-0" style="font-size: 0.85rem;">Marketing Director</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Testimonial 3 -->
+                    <div class="swiper-slide h-auto">
+                        <div
+                            class="card border-0 rounded-4 p-4 p-md-5 h-100 testimonial-card shadow-sm position-relative z-index-1">
+                            <i class="fas fa-quote-right quote-icon"></i>
+                            <div class="d-flex text-warning mb-3">
+                                <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                    class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
+                            </div>
+                            <p class="fst-italic text-muted flex-grow-1 mb-4" style="line-height: 1.8;">"Highly
+                                responsive and professional. They didn't just build an app; they built a scalable
+                                solution that perfectly fits our long-term business goals with elegant code."</p>
+                            <div class="d-flex align-items-center mt-auto">
+                                <img src="assets/images/img_07.webp"
+                                    alt="Emma Davis" class="rounded-circle me-3"
+                                    style="width: 60px; height: 60px; object-fit: cover;">
+                                <div>
+                                    <h6 class="fw-bold mb-1">Emma Davis</h6>
+                                    <p class="text-primary mb-0" style="font-size: 0.85rem;">Product Manager</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Testimonial 4 -->
+                    <div class="swiper-slide h-auto">
+                        <div
+                            class="card border-0 rounded-4 p-4 p-md-5 h-100 testimonial-card shadow-sm position-relative z-index-1">
+                            <i class="fas fa-quote-right quote-icon"></i>
+                            <div class="d-flex text-warning mb-3">
+                                <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                    class="fas fa-star"></i><i class="fas fa-star"></i>
+                            </div>
+                            <p class="fst-italic text-muted flex-grow-1 mb-4" style="line-height: 1.8;">"The attention
+                                to detail and continuous 24/7 support gives us immense peace of mind. A truly
+                                world-class creative agency that I would recommend to anyone."</p>
+                            <div class="d-flex align-items-center mt-auto">
+                                <img src="assets/images/img_19.webp"
+                                    alt="David Wilson" class="rounded-circle me-3"
+                                    style="width: 60px; height: 60px; object-fit: cover;">
+                                <div>
+                                    <h6 class="fw-bold mb-1">David Wilson</h6>
+                                    <p class="text-primary mb-0" style="font-size: 0.85rem;">Founder, StartupX</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Pagination (Dots) -->
+                <div class="swiper-pagination testimonial-pagination"></div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- Enhanced Team Section -->
+    <section class="py-5 bg-white position-relative team-section">
+        <div class="container">
+            <div class="text-center mb-5">
+                <div class="d-inline-flex align-items-center justify-content-center mb-3" data-aos="fade-up">
+                    <span class="bg-primary-subtle text-primary fw-bold px-4 py-2 rounded-pill text-uppercase"
+                        style="font-size: 0.85rem; letter-spacing: 2px;">Our Team</span>
+                </div>
+                <h2 class="display-5 fw-bolder" data-aos="fade-up" data-aos-delay="100">Meet The <span
+                        class="text-primary-gradient">Experts</span></h2>
+            </div>
+
+            <div class="row g-4">
+                <!-- Team 1 -->
+                <div class="col-sm-6 col-lg-3" data-aos="fade-up" data-aos-delay="150">
+                    <div class="team-card rounded-4 overflow-hidden position-relative shadow-sm">
+                        <img src="assets/images/img_20.webp"
+                            class="img-fluid w-100 team-img" alt="John Doe">
+                        <div
+                            class="team-social-overlay d-flex align-items-center justify-content-center gap-2 gap-md-3">
+                            <a href="#" class="social-icon"><i class="fa-brands fa-x-twitter"></i></a>
+                            <a href="#" class="social-icon"><i class="fa-brands fa-linkedin-in"></i></a>
+                            <a href="#" class="social-icon"><i class="fa-brands fa-instagram"></i></a>
+                            <a href="#" class="social-icon"><i class="fa-brands fa-facebook-f"></i></a>
+                        </div>
+                        <div class="team-info bg-white text-center p-3 w-100 d-flex flex-column justify-content-center">
+                            <h5 class="fw-bold mb-1">John Doe</h5>
+                            <p class="text-primary mb-0 fw-semibold" style="font-size: 0.9rem;">Founder & CEO</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Team 2 -->
+                <div class="col-sm-6 col-lg-3" data-aos="fade-up" data-aos-delay="250">
+                    <div class="team-card rounded-4 overflow-hidden position-relative shadow-sm">
+                        <img src="assets/images/img_21.webp"
+                            class="img-fluid w-100 team-img" alt="Jane Smith">
+                        <div
+                            class="team-social-overlay d-flex align-items-center justify-content-center gap-2 gap-md-3">
+                            <a href="#" class="social-icon"><i class="fa-brands fa-x-twitter"></i></a>
+                            <a href="#" class="social-icon"><i class="fa-brands fa-linkedin-in"></i></a>
+                            <a href="#" class="social-icon"><i class="fa-brands fa-instagram"></i></a>
+                            <a href="#" class="social-icon"><i class="fa-brands fa-facebook-f"></i></a>
+                        </div>
+                        <div class="team-info bg-white text-center p-3 w-100 d-flex flex-column justify-content-center">
+                            <h5 class="fw-bold mb-1">Jane Smith</h5>
+                            <p class="text-primary mb-0 fw-semibold" style="font-size: 0.9rem;">Lead Designer</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Team 3 -->
+                <div class="col-sm-6 col-lg-3" data-aos="fade-up" data-aos-delay="350">
+                    <div class="team-card rounded-4 overflow-hidden position-relative shadow-sm">
+                        <img src="assets/images/img_22.webp"
+                            class="img-fluid w-100 team-img" alt="Mike Johnson">
+                        <div
+                            class="team-social-overlay d-flex align-items-center justify-content-center gap-2 gap-md-3">
+                            <a href="#" class="social-icon"><i class="fa-brands fa-x-twitter"></i></a>
+                            <a href="#" class="social-icon"><i class="fa-brands fa-linkedin-in"></i></a>
+                            <a href="#" class="social-icon"><i class="fa-brands fa-instagram"></i></a>
+                            <a href="#" class="social-icon"><i class="fa-brands fa-facebook-f"></i></a>
+                        </div>
+                        <div class="team-info bg-white text-center p-3 w-100 d-flex flex-column justify-content-center">
+                            <h5 class="fw-bold mb-1">Mike Johnson</h5>
+                            <p class="text-primary mb-0 fw-semibold" style="font-size: 0.9rem;">Lead Developer</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Team 4 -->
+                <div class="col-sm-6 col-lg-3" data-aos="fade-up" data-aos-delay="450">
+                    <div class="team-card rounded-4 overflow-hidden position-relative shadow-sm">
+                        <img src="assets/images/img_23.webp"
+                            class="img-fluid w-100 team-img" alt="Sophia Martinez">
+                        <div
+                            class="team-social-overlay d-flex align-items-center justify-content-center gap-2 gap-md-3">
+                            <a href="#" class="social-icon"><i class="fa-brands fa-x-twitter"></i></a>
+                            <a href="#" class="social-icon"><i class="fa-brands fa-linkedin-in"></i></a>
+                            <a href="#" class="social-icon"><i class="fa-brands fa-instagram"></i></a>
+                            <a href="#" class="social-icon"><i class="fa-brands fa-facebook-f"></i></a>
+                        </div>
+                        <div class="team-info bg-white text-center p-3 w-100 d-flex flex-column justify-content-center">
+                            <h5 class="fw-bold mb-1">Sophia Martinez</h5>
+                            <p class="text-primary mb-0 fw-semibold" style="font-size: 0.9rem;">Marketing Head</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Partners Section -->
+    <section class="py-5 bg-white position-relative border-top border-bottom border-light">
+        <div class="container text-center">
+            <div class="d-inline-flex align-items-center justify-content-center mb-3" data-aos="fade-up">
+                <span class="bg-primary-subtle text-primary fw-bold px-4 py-2 rounded-pill text-uppercase"
+                    style="font-size: 0.85rem; letter-spacing: 2px;">Partners</span>
+            </div>
+            <h2 class="display-5 fw-bolder mb-5" data-aos="fade-up" data-aos-delay="100">Brands We <span
+                    class="text-primary-gradient">Trust</span></h2>
+
+            <!-- Infinite CSS Marquee -->
+            <div class="brand-marquee-container mt-5" data-aos="fade-up" data-aos-delay="200">
+                <div class="brand-marquee-track">
+                    <!-- Group 1 -->
+                    <div class="brand-logo"><i class="fa-brands fa-aws"></i><span class="ms-2 fw-bold">AWS</span></div>
+                    <div class="brand-logo"><i class="fa-brands fa-google"></i><span class="ms-2 fw-bold">Google</span>
+                    </div>
+                    <div class="brand-logo"><i class="fa-brands fa-microsoft"></i><span
+                            class="ms-2 fw-bold">Microsoft</span></div>
+                    <div class="brand-logo"><i class="fa-brands fa-apple"></i><span class="ms-2 fw-bold">Apple</span>
+                    </div>
+                    <div class="brand-logo"><i class="fa-brands fa-spotify"></i><span
+                            class="ms-2 fw-bold">Spotify</span></div>
+                    <div class="brand-logo"><i class="fa-brands fa-slack"></i><span class="ms-2 fw-bold">Slack</span>
+                    </div>
+                    <div class="brand-logo"><i class="fa-brands fa-figma"></i><span class="ms-2 fw-bold">Figma</span>
+                    </div>
+
+                    <!-- Group 2 (Duplicate for seamless loop) -->
+                    <div class="brand-logo"><i class="fa-brands fa-aws"></i><span class="ms-2 fw-bold">AWS</span></div>
+                    <div class="brand-logo"><i class="fa-brands fa-google"></i><span class="ms-2 fw-bold">Google</span>
+                    </div>
+                    <div class="brand-logo"><i class="fa-brands fa-microsoft"></i><span
+                            class="ms-2 fw-bold">Microsoft</span></div>
+                    <div class="brand-logo"><i class="fa-brands fa-apple"></i><span class="ms-2 fw-bold">Apple</span>
+                    </div>
+                    <div class="brand-logo"><i class="fa-brands fa-spotify"></i><span
+                            class="ms-2 fw-bold">Spotify</span></div>
+                    <div class="brand-logo"><i class="fa-brands fa-slack"></i><span class="ms-2 fw-bold">Slack</span>
+                    </div>
+                    <div class="brand-logo"><i class="fa-brands fa-figma"></i><span class="ms-2 fw-bold">Figma</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Enhanced Latest Articles Section -->
+    <section class="py-5 bg-light position-relative news-section">
+        <div class="container">
+            <div class="text-center mb-5">
+                <div class="d-inline-flex align-items-center justify-content-center mb-3" data-aos="fade-up">
+                    <span class="bg-primary-subtle text-primary fw-bold px-4 py-2 rounded-pill text-uppercase"
+                        style="font-size: 0.85rem; letter-spacing: 2px;">News & Insights</span>
+                </div>
+                <h2 class="display-5 fw-bolder" data-aos="fade-up" data-aos-delay="100">Latest <span
+                        class="text-primary-gradient">Articles</span></h2>
+            </div>
+
+            <div class="row g-4">
+                <!-- Article 1 -->
+                <div class="col-md-4" data-aos="fade-up" data-aos-delay="150">
+                    <div class="article-card card border-0 h-100 rounded-4 shadow-sm overflow-hidden bg-white">
+                        <div class="article-img-wrapper position-relative overflow-hidden">
+                            <img src="assets/images/img_24.webp"
+                                class="card-img-top article-img" alt="Article 1">
+                            <div class="article-category bg-primary text-white px-3 py-1 rounded-pill position-absolute fw-bold"
+                                style="top: 15px; right: 15px; font-size: 0.8rem;">Design</div>
+                        </div>
+                        <div class="card-body p-4 d-flex flex-column">
+                            <h4 class="card-title fw-bold mb-3 article-title">The Future of UI/UX in Web Design</h4>
+                            <p class="card-text text-muted mb-4 flex-grow-1">Discover how AI and machine learning are
+                                revolutionizing the way we create user interfaces and experiences in modern web design.
+                            </p>
+                            <div class="d-flex align-items-center mt-auto border-top pt-4">
+                                <img src="assets/images/img_07.webp"
+                                    class="rounded-circle me-3 shadow-sm"
+                                    style="width: 45px; height: 45px; object-fit: cover;" alt="Emma Davis">
+                                <div>
+                                    <h6 class="mb-0 fw-bold text-dark" style="font-size: 0.95rem;">Emma Davis</h6>
+                                    <small class="text-muted" style="font-size: 0.8rem;">Oct 12, 2026 • 5 min
+                                        read</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Article 2 -->
+                <div class="col-md-4" data-aos="fade-up" data-aos-delay="250">
+                    <div class="article-card card border-0 h-100 rounded-4 shadow-sm overflow-hidden bg-white">
+                        <div class="article-img-wrapper position-relative overflow-hidden">
+                            <img src="assets/images/img_10.webp"
+                                class="card-img-top article-img" alt="Article 2">
+                            <div class="article-category bg-primary text-white px-3 py-1 rounded-pill position-absolute fw-bold"
+                                style="top: 15px; right: 15px; font-size: 0.8rem;">Marketing</div>
+                        </div>
+                        <div class="card-body p-4 d-flex flex-column">
+                            <h4 class="card-title fw-bold mb-3 article-title">Scaling Your Brand Digitally</h4>
+                            <p class="card-text text-muted mb-4 flex-grow-1">Actionable strategies for startups and
+                                agencies to scale their brand presence across multiple digital channels effectively.</p>
+                            <div class="d-flex align-items-center mt-auto border-top pt-4">
+                                <img src="assets/images/img_18.webp"
+                                    class="rounded-circle me-3 shadow-sm"
+                                    style="width: 45px; height: 45px; object-fit: cover;" alt="Michael Chen">
+                                <div>
+                                    <h6 class="mb-0 fw-bold text-dark" style="font-size: 0.95rem;">Michael Chen</h6>
+                                    <small class="text-muted" style="font-size: 0.8rem;">Oct 10, 2026 • 8 min
+                                        read</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Article 3 -->
+                <div class="col-md-4" data-aos="fade-up" data-aos-delay="350">
+                    <div class="article-card card border-0 h-100 rounded-4 shadow-sm overflow-hidden bg-white">
+                        <div class="article-img-wrapper position-relative overflow-hidden">
+                            <img src="assets/images/img_25.webp"
+                                class="card-img-top article-img" alt="Article 3">
+                            <div class="article-category bg-primary text-white px-3 py-1 rounded-pill position-absolute fw-bold"
+                                style="top: 15px; right: 15px; font-size: 0.8rem;">Development</div>
+                        </div>
+                        <div class="card-body p-4 d-flex flex-column">
+                            <h4 class="card-title fw-bold mb-3 article-title">Why Performance Matters</h4>
+                            <p class="card-text text-muted mb-4 flex-grow-1">Site speed is no longer just a luxury.
+                                Learn why optimizing your web application's performance is crucial for conversions.</p>
+                            <div class="d-flex align-items-center mt-auto border-top pt-4">
+                                <img src="assets/images/img_22.webp"
+                                    class="rounded-circle me-3 shadow-sm"
+                                    style="width: 45px; height: 45px; object-fit: cover;" alt="Ryan Carter">
+                                <div>
+                                    <h6 class="mb-0 fw-bold text-dark" style="font-size: 0.95rem;">Ryan Carter</h6>
+                                    <small class="text-muted" style="font-size: 0.8rem;">Oct 05, 2026 • 6 min
+                                        read</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Enhanced CTA Section -->
+    <section class="py-5 position-relative cta-section overflow-hidden">
+        <!-- Background Image with Parallax -->
+        <div class="cta-overlay"></div>
+
+        <!-- Floating Dancing Icons -->
+        <div class="cta-floating-icons">
+            <i class="fas fa-rocket icon-1"></i>
+            <i class="fas fa-lightbulb icon-2"></i>
+            <i class="fas fa-code icon-3"></i>
+            <i class="fas fa-pen-nib icon-4"></i>
+            <i class="fas fa-chart-pie icon-5"></i>
+            <i class="fas fa-mobile-alt icon-6"></i>
+            <i class="fas fa-bullhorn icon-7"></i>
+            <i class="fas fa-chess-knight icon-8"></i>
+        </div>
+
+        <div class="container position-relative text-center text-white" style="z-index: 2;">
+            <div class="row justify-content-center">
+                <div class="col-lg-9" data-aos="zoom-in">
+                    <h2 class="display-4 fw-bolder mb-4 text-white">Ready to <span class="text-warning">Transform</span>
+                        Your Business?</h2>
+                    <p class="lead mb-5 opacity-75 mx-auto"
+                        style="font-size: 1.15rem; max-width: 700px; line-height: 1.8;">Join 150+ happy clients who have
+                        scaled their digital presence with our award-winning team. Let's create something amazing
+                        together.</p>
+                    <div class="d-flex flex-column flex-sm-row justify-content-center gap-3">
+                        <a href="contact.html"
+                            class="btn btn-light btn-lg px-5 py-3 text-primary fw-bold rounded-pill shadow-lg cta-btn">
+                            Start Your Project
+                        </a>
+                        <a href="services.html"
+                            class="btn btn-outline-light btn-lg px-5 py-3 fw-bold rounded-pill cta-btn-outline">
+                            Our Services
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Enhanced FAQ Section -->
+    <section class="py-5 bg-white position-relative faq-section">
+        <div class="container">
+            <div class="row align-items-center">
+                <!-- Left Column: Title and Contact Info -->
+                <div class="col-lg-5 mb-5 mb-lg-0" data-aos="fade-right">
+                    <div class="d-inline-flex align-items-center justify-content-center justify-content-lg-start mb-3">
+                        <span class="bg-primary-subtle text-primary fw-bold px-4 py-2 rounded-pill text-uppercase"
+                            style="font-size: 0.85rem; letter-spacing: 2px;">Support</span>
+                    </div>
+                    <h2 class="display-5 fw-bolder mb-4">Frequently Asked <br class="d-none d-lg-block"><span
+                            class="text-primary-gradient">Questions</span></h2>
+                    <p class="lead text-muted mb-5" style="font-size: 1.1rem;">Have a different question and can't find
+                        the answer you're looking for? Reach out to our support team.</p>
+
+                    <div class="d-inline-flex align-items-center p-4 bg-light rounded-4 shadow-sm border border-white">
+                        <div class="bg-white p-3 rounded-circle text-primary shadow-sm me-3 d-flex align-items-center justify-content-center"
+                            style="width: 60px; height: 60px;">
+                            <i class="fas fa-headset fs-3"></i>
+                        </div>
+                        <div class="text-start">
+                            <h5 class="fw-bold mb-1">Still need help?</h5>
+                            <a href="contact.html"
+                                class="text-primary fw-bold text-decoration-none support-link">Contact Support <i
+                                    class="fas fa-arrow-right ms-1"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right Column: Accordion -->
+                <div class="col-lg-7 ps-lg-5" data-aos="fade-left" data-aos-delay="200">
+                    <div class="accordion custom-accordion" id="faqAccordion">
+                        <!-- FAQ 1 -->
+                        <div class="accordion-item rounded-4 border-0 shadow-sm mb-4 overflow-hidden">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button fw-bold py-4 px-4 px-md-5" type="button"
+                                    data-bs-toggle="collapse" data-bs-target="#faq1">
+                                    What is your design and development process?
+                                </button>
+                            </h2>
+                            <div id="faq1" class="accordion-collapse collapse show" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body px-4 px-md-5 pb-4 pt-0 text-muted" style="line-height: 1.8;">
+                                    We follow a strict, agile process consisting of five main phases: Discovery &
+                                    Research, Wireframing & Ideation, High-Fidelity Design, Full-Stack Development, and
+                                    rigorous Quality Assurance Testing. We keep you involved at every single step.
+                                </div>
+                            </div>
+                        </div>
+                        <!-- FAQ 2 -->
+                        <div class="accordion-item rounded-4 border-0 shadow-sm mb-4 overflow-hidden">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed fw-bold py-4 px-4 px-md-5" type="button"
+                                    data-bs-toggle="collapse" data-bs-target="#faq2">
+                                    How long does a typical project take?
+                                </button>
+                            </h2>
+                            <div id="faq2" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body px-4 px-md-5 pb-4 pt-0 text-muted" style="line-height: 1.8;">
+                                    A typical medium-sized corporate website takes 4-6 weeks from start to finish.
+                                    However, custom web applications or highly animated sites may take 8-12 weeks
+                                    depending on the complexity of features.
+                                </div>
+                            </div>
+                        </div>
+                        <!-- FAQ 3 -->
+                        <div class="accordion-item rounded-4 border-0 shadow-sm mb-4 overflow-hidden">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed fw-bold py-4 px-4 px-md-5" type="button"
+                                    data-bs-toggle="collapse" data-bs-target="#faq3">
+                                    Do you provide post-launch support and maintenance?
+                                </button>
+                            </h2>
+                            <div id="faq3" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body px-4 px-md-5 pb-4 pt-0 text-muted" style="line-height: 1.8;">
+                                    Yes! We offer 3 months of complimentary support after launch. After that, we have
+                                    affordable monthly maintenance packages to ensure your site stays secure, fast, and
+                                    up-to-date.
+                                </div>
+                            </div>
+                        </div>
+                        <!-- FAQ 4 -->
+                        <div class="accordion-item rounded-4 border-0 shadow-sm mb-4 overflow-hidden">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed fw-bold py-4 px-4 px-md-5" type="button"
+                                    data-bs-toggle="collapse" data-bs-target="#faq4">
+                                    Are your websites optimized for SEO?
+                                </button>
+                            </h2>
+                            <div id="faq4" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body px-4 px-md-5 pb-4 pt-0 text-muted" style="line-height: 1.8;">
+                                    Absolutely. Every website we build is optimized for Search Engines from the ground
+                                    up. We ensure fast loading speeds, proper semantic HTML tags, mobile responsiveness,
+                                    and meta-data configurations.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Enhanced Newsletter Section -->
+    <section class="py-5 bg-light">
+        <div class="container">
+            <div class="newsletter-card rounded-5 position-relative overflow-hidden shadow-lg" data-aos="zoom-in" data-aos-delay="100">
+                <!-- Decorative Background Shapes -->
+                <div class="shape shape-1"></div>
+                <div class="shape shape-2"></div>
+                
+                <div class="row align-items-center position-relative z-index-1 p-4 p-md-5">
+                    <div class="col-lg-6 mb-4 mb-lg-0 text-center text-lg-start text-white">
+                        <h2 class="display-6 fw-bolder mb-2 text-white">Subscribe to our Newsletter</h2>
+                        <p class="mb-0 opacity-75" style="font-size: 1.1rem;">Get the latest news, design tips, and resources sent straight to your inbox.</p>
+                    </div>
+                    <div class="col-lg-6">
+                        <form class="newsletter-form">
+                            <div class="input-group input-group-lg rounded-pill bg-white p-1 shadow-sm">
+                                <span class="input-group-text border-0 bg-transparent text-muted ps-4"><i class="fas fa-envelope"></i></span>
+                                <input type="email" class="form-control border-0 shadow-none bg-transparent px-3" placeholder="Enter your email address" required>
+                                <button class="btn btn-primary rounded-pill px-4 px-md-5 fw-bold" type="button">Subscribe</button>
+                            </div>
+                            <div class="text-center text-lg-end mt-2 me-lg-3">
+                                <small class="text-white opacity-50"><i class="fas fa-shield-alt me-1"></i> No spam. Unsubscribe anytime.</small>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div id="footer-placeholder"></div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <!-- AOS JS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="assets/js/script.js"></script>
+</body>
+
+</html>
