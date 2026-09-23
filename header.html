@@ -1,31 +1,116 @@
 <nav class="navbar navbar-expand-lg navbar-dark py-3 navbar-radiant" id="main-navbar">
   <div class="container">
     <!-- Logo -->
-    <a class="navbar-brand d-flex align-items-center" href="index.html">
-      <img src="assets/images/logoStackly.webp" alt="Creative Agency Portfolio Logo" height="50">
+    <a class="navbar-brand position-relative" style="z-index: 1060;" href="index.html">
+        <div style="-webkit-mask: url('assets/images/logoStackly.webp') no-repeat center left; -webkit-mask-size: contain; mask: url('assets/images/logoStackly.webp') no-repeat center left; mask-size: contain; background: #ffffff; width: 160px; height: 50px;" class="header-logo-mask" aria-label="Stackly Logo"></div>
     </a>
     
     <!-- Mobile Toggle Button -->
-    <button class="navbar-toggler border-0 shadow-none" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <button class="navbar-toggler border-0 shadow-none position-relative" style="z-index: 1060;" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
     
     <!-- Menu Items -->
     <div class="collapse navbar-collapse" id="navbarNav">
-      <ul class="navbar-nav mx-auto text-center custom-nav-links">
-        <li class="nav-item px-2"><a class="nav-link fw-semibold text-uppercase" style="font-size: 14px; letter-spacing: 1px;" href="index.html">Home</a></li>
-        <li class="nav-item px-2"><a class="nav-link fw-semibold text-uppercase" style="font-size: 14px; letter-spacing: 1px;" href="about.html">About</a></li>
-        <li class="nav-item px-2"><a class="nav-link fw-semibold text-uppercase" style="font-size: 14px; letter-spacing: 1px;" href="services.html">Services</a></li>
-        <li class="nav-item px-2"><a class="nav-link fw-semibold text-uppercase" style="font-size: 14px; letter-spacing: 1px;" href="portfolio.html">Portfolio</a></li><li class="nav-item px-2"><a class="nav-link fw-semibold text-uppercase" style="font-size: 14px; letter-spacing: 1px;" href="blog.html">Blog</a></li>
-        <li class="nav-item px-2"><a class="nav-link fw-semibold text-uppercase" style="font-size: 14px; letter-spacing: 1px;" href="contact.html">Contact</a></li>
+      <ul class="navbar-nav mx-auto align-items-center custom-nav-links" id="nav-links">
+        <li class="nav-item"><a class="nav-link text-uppercase" href="index.html">Home</a></li>
+        <li class="nav-item"><a class="nav-link text-uppercase" href="about.html">About</a></li>
+        <li class="nav-item"><a class="nav-link text-uppercase" href="services.html">Services</a></li>
+        <li class="nav-item"><a class="nav-link text-uppercase" href="portfolio.html">Portfolio</a></li>
+        <li class="nav-item"><a class="nav-link text-uppercase" href="blog.html">Blog</a></li>
+        <li class="nav-item"><a class="nav-link text-uppercase" href="contact.html">Contact</a></li>
       </ul>
       
-      <!-- Login Button in Header -->
-      <div class="d-none d-lg-flex align-items-center">
-         <a href="login.html" class="btn-theme-login" >
-            Login <i class="fas fa-sign-in-alt ps-2"></i>
+      <!-- Right Login Button -->
+      <div class="d-flex align-items-center justify-content-center mt-4 mt-lg-0">
+         <a href="login.html" class="btn-theme-login d-inline-flex align-items-center gap-2">
+            Login <i class="fas fa-sign-in-alt login-icon"></i>
          </a>
       </div>
     </div>
   </div>
 </nav>
+
+<style>
+    /* Shared Desktop Menu Spacing & Underline */
+    .custom-nav-links .nav-link {
+        font-size: 14px;
+        letter-spacing: 1px;
+        font-weight: 600;
+        position: relative;
+        padding-bottom: 5px;
+    }
+
+    /* Desktop Menu */
+    @media (min-width: 992px) {
+        .custom-nav-links { gap: 1.5rem; }
+        .custom-nav-links .nav-link::after {
+            content: ''; position: absolute; width: 0; height: 2px; bottom: 0; left: 50%;
+            background-color: #ffffff; transition: all 0.3s ease; transform: translateX(-50%);
+        }
+        .custom-nav-links .nav-link:hover::after,
+        .custom-nav-links .nav-link.active::after { width: 100%; }
+        
+        .custom-nav-links .nav-link.active {
+            font-weight: 700;
+        }
+    }
+
+    /* Icon Animation on Hover */
+    .btn-theme-login .login-icon {
+        transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+        display: inline-block;
+    }
+    .btn-theme-login:hover .login-icon {
+        transform: translateX(4px);
+    }
+
+    /* Full-Screen Mobile Menu Fix */
+    @media (max-width: 991.98px) {
+        .navbar-collapse {
+            position: fixed;
+            top: 0; left: 0;
+            width: 100vw; height: 100vh !important;
+            background-color: var(--secondary-color, #1f1f25);
+            padding-top: 120px;
+            padding-bottom: 15vh;
+            z-index: 1050;
+            overflow-y: auto;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .navbar-nav {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 1.25rem;
+            margin-bottom: 2rem;
+            padding-left: 0;
+        }
+        .custom-nav-links .nav-link {
+            font-size: 1.35rem;
+            padding: 0.5rem 1rem;
+            color: #ffffff !important;
+            opacity: 0.7;
+            transition: all 0.3s ease;
+        }
+        .custom-nav-links .nav-link:hover { opacity: 1; }
+        
+        /* Active state for mobile */
+        .custom-nav-links .nav-link.active {
+            color: var(--primary-color, #ff4a57) !important;
+            opacity: 1;
+        }
+        .custom-nav-links .nav-link.active::after {
+            content: ''; position: absolute; bottom: 0; left: 20%; width: 60%; height: 2px;
+            background-color: var(--primary-color, #ff4a57);
+        }
+        
+        /* Ensure the login button is prominently displayed */
+        .btn-theme-login {
+            font-size: 1.15rem;
+            padding: 12px 40px;
+        }
+    }
+</style>
