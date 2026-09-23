@@ -119,53 +119,9 @@ function initScrollToTop() {
 }
 
 
-// Initialize AOS Animation
-document.addEventListener('DOMContentLoaded', () => {
-    if(typeof AOS !== 'undefined') {
-        AOS.init({
-            duration: 800,
-            once: true,
-            offset: 100
-        });
-    }
-});
 
-    // Initialize Swiper Hero with Robotic/Mechanical Effect
-    if (document.querySelector('.heroSwiper')) {
-        new Swiper('.heroSwiper', {
-            speed: 1200,
-            parallax: true,
-            loop: true,
-            grabCursor: true,
-            effect: 'creative',
-            creativeEffect: {
-                prev: {
-                    shadow: true,
-                    translate: ['-120%', 0, -500],
-                    rotate: [0, 0, -45],
-                    opacity: 0
-                },
-                next: {
-                    shadow: true,
-                    translate: ['120%', 0, -500],
-                    rotate: [0, 0, 45],
-                    opacity: 0
-                },
-            },
-            autoplay: {
-                delay: 5000,
-                disableOnInteraction: false,
-            },
-            pagination: {
-                el: '.swiper-pagination',
-                clickable: true,
-            },
-            navigation: {
-                nextEl: '.swiper-button-next',
-                prevEl: '.swiper-button-prev',
-            },
-        });
-    }
+
+    
 
 
 
@@ -179,6 +135,79 @@ document.addEventListener("click", function(e) {
             const currentPath = window.location.pathname;
             const inSubfolder = currentPath.includes('/dashboard/');
             window.location.href = inSubfolder ? '../404.html' : '404.html';
+        }
+    }
+});
+
+
+// Preloader & Delayed AOS Initialization
+document.addEventListener("DOMContentLoaded", () => {
+    const preloader = document.getElementById("theme-preloader");
+    if (preloader) {
+        // Prevent scrolling while loading
+        document.body.style.overflow = "hidden";
+        
+        setTimeout(() => {
+            // Hide Preloader (starts fading out)
+            preloader.style.opacity = "0";
+            
+            // Wait for fade out transition (0.6s) to finish before starting animations
+            setTimeout(() => {
+                preloader.style.visibility = "hidden";
+                document.body.style.overflow = ""; // Restore scrolling
+                
+                // Initialize Hero Swiper AFTER preloader is completely gone
+                // This ensures the user clearly sees the beautiful swipe-in animation
+                if (document.querySelector('.heroSwiper') && typeof Swiper !== 'undefined') {
+                    new Swiper('.heroSwiper', {
+                        speed: 1200,
+                        parallax: true,
+                        loop: true,
+                        grabCursor: true,
+                        effect: 'creative',
+                        creativeEffect: {
+                            prev: { shadow: true, translate: ['-120%', 0, -500], rotate: [0, 0, -45], opacity: 0 },
+                            next: { shadow: true, translate: ['120%', 0, -500], rotate: [0, 0, 45], opacity: 0 },
+                        },
+                        autoplay: { delay: 3000, disableOnInteraction: false },
+                        pagination: { el: '.swiper-pagination', clickable: true },
+                        navigation: { nextEl: '.swiper-button-next', prevEl: '.swiper-button-prev' },
+                    });
+                }
+
+                // Initialize AOS Animations AFTER preloader is gone
+                if(typeof AOS !== 'undefined') {
+                    AOS.init({
+                        duration: 800,
+                        once: true,
+                        offset: 100
+                    });
+                }
+            }, 600); // Wait for 0.6s CSS opacity transition
+        }, 2000); // 2 Seconds
+    } else {
+        
+        // Initialize Hero Swiper
+        if (document.querySelector('.heroSwiper') && typeof Swiper !== 'undefined') {
+            new Swiper('.heroSwiper', {
+                speed: 1200, parallax: true, loop: true, grabCursor: true, effect: 'creative',
+                creativeEffect: {
+                    prev: { shadow: true, translate: ['-120%', 0, -500], rotate: [0, 0, -45], opacity: 0 },
+                    next: { shadow: true, translate: ['120%', 0, -500], rotate: [0, 0, 45], opacity: 0 },
+                },
+                autoplay: { delay: 3000, disableOnInteraction: false },
+                pagination: { el: '.swiper-pagination', clickable: true },
+                navigation: { nextEl: '.swiper-button-next', prevEl: '.swiper-button-prev' },
+            });
+        }
+        
+        // Fallback if no preloader is present on the page
+        if(typeof AOS !== 'undefined') {
+            AOS.init({
+                duration: 800,
+                once: true,
+                offset: 100
+            });
         }
     }
 });
